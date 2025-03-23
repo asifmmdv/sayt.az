@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+    --breakpoint-s: 1024px;
+    --breakpoint-m: 1280px;
+  }
+
+body{
+    font-family: "Manrope",sans-serif;
+}
+
+.dropdowns::-webkit-scrollbar {
+    width: 5px; 
+  }
+  
+  .dropdowns::-webkit-scrollbar-track {
+    background: rgb(226, 232, 240); 
+  }
+  
+  .dropdowns::-webkit-scrollbar-thumb {
+    border-radius: 6px; 
+    background: rgb(162, 113, 242);
+  }
+  
+  .dropdowns::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+  }
+
+
+.switch{
+  display: flex;
+  max-height: 498px;
+}
+
+.opensb{
+  display: flex;
+}

@@ -1803,6 +1803,9 @@
   .scheme-only-light {
     color-scheme: only light;
   }
+  .opacity-0 {
+    opacity: 0%;
+  }
   .mix-blend-plus-darker {
     mix-blend-mode: plus-darker;
   }
@@ -2145,6 +2148,16 @@
   .m\:hidden {
     @media (width >= 1280px) {
       display: none;
+    }
+  }
+  .m\:opacity-0 {
+    @media (width >= 1280px) {
+      opacity: 0%;
+    }
+  }
+  .m\:opacity-1 {
+    @media (width >= 1280px) {
+      opacity: 1%;
     }
   }
 }

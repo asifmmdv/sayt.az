@@ -24,12 +24,18 @@ function opendd(x) {
 function opensb() {
     const sidebar = document.getElementById('sidebar');
     const alldropdowns = document.querySelectorAll('.switch');
+    if (window.innerWidth < 1280) { // Check if the window size is greater than 1280px
 
-    // Close all dropdowns if any are open
-    alldropdowns.forEach(dropdown => {
-        dropdown.classList.remove('switch');
-    });
+        // Close all dropdowns if any are open
+        alldropdowns.forEach(dropdown => {
+            dropdown.classList.remove('switch');
+        });
 
-    // Toggle the sidebar
-    sidebar.classList.toggle('opensb');
+        // Toggle the sidebar
+        sidebar.classList.toggle('opensb');
+    }
+    else {
+        sidebar.classList.remove('opensb');
+    }
 }
+

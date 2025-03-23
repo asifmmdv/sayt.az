@@ -324,322 +324,521 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg>
             </div>
         </div>
-        <div id="sidebar" class="hidden flex-col w-[383px] h-100vh overflow-y-auto p-[24px] bg-white  border-l-[rgb(227,221,233)]  border-[1px] border-r-0 border-b-0 border-t-0 gap-[30px] absolute top-0 right-0 ">
-            <div onclick="opensb()" class="ml-auto cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </div>
-            <div class="flex flex-col gap-[30px] s:hidden py-[12px]">
-                <div class="flex flex-col relative">
-                    <div onclick="opendd(11)" class="flex items-center font-bold text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
-                        <div >Veb sayt</div>
-                        <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
-                    </div>
-                    <div id="dropdown11" class="flex-col py-[16px] w-[334px] rounded-lg border-slate-200 hidden overflow-y-scroll border-[1px] absolute top-[38px] z-[4000] bg-white dropdowns">
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] hidden xs:flex bg-[rgb(219,234,254)]  items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/website-program.svg" alt="wbp1"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Saytların hazırlanması</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Veb saytların hazırlanması</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/lJ9i3mHSrGbIyOFk6VnqpcyzeZgiKmjyiUfdEhAc.svg" alt="wbp2"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Hökumət və qeyri-kommersiya saytları</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Hökumət və qeyri-kommersiya saytları</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/3.svg" alt="wbp3"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Kiçik biznes saytları</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Kiçik bizneslər üçün saytlar</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/4.svg" alt="wbp4"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">E-ticarət saytları</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">E-ticarət saytları</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/5.svg" alt="wbp5"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Hüquq firma saytı</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Hüquq firma saytı</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/6.svg" alt="wbp6"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Bloqlar və Şəxsi Vebsayt</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Bloqlar və Şəxsi Vebsayt</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/7.svg" alt="wbp7"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Daşınmaz əmlak veb saytı</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Daşınmaz əmlak veb saytı</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/8.svg" alt="wbp8"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Tibb - Doktor Saytlar</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Tibb Doktor Saytlar</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/9.svg" alt="wbp9"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">WordPress Saytları</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">WordPress Saytları</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col relative">
-                    <div onclick="opendd(12)" class="flex items-center font-bold text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
-                        <div>Domen</div>
-                        <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
-                    </div>
-                    <div id="dropdown12" class="flex-col py-[16px] rounded-lg border-slate-200 overflow-y-scroll border-[1px] hidden absolute top-[38px] bg-white  z-[4000] dropdowns">
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/10.svg" alt="wbp10"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Domen</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Etibarlı xidmət</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/11.svg" alt="wbp11"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Pulsuz Domen Qeydiyyatı</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Sürətli qeydiyyat</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col relative">
-                    <div onclick="opendd(13)" class="flex items-center font-bold text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
-                        <div>Hosting</div>
-                        <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
-                    </div>
-                    <div id="dropdown13" class="flex-col py-[16px] rounded-lg border-slate-200 overflow-y-scroll border-[1px] hidden absolute top-[38px] z-[4000] bg-white dropdowns">
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/12.svg" alt="wbp12"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Veb Hosting</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">₼10.00/ay-dan başlayaraq</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/13.svg" alt="wbp13"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">VPS</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">₼15.00/ay-dan başlayaraq</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/14.svg" alt="wbp14"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Server</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">₼99.00/ay-dan başlayaraq</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col relative">
-                    <div onclick="opendd(14)" class="flex items-center font-bold text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
-                        <div>Xidmətlər</div>
-                        <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
-                    </div>
-                    <div id="dropdown14" class="flex-col py-[16px] rounded-lg border-slate-200 overflow-y-scroll border-[1px] hidden absolute bg-white top-[38px]  z-[4000] dropdowns">
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/15.svg" alt="wbp15"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Vebsayt sifarişinizi izləyin</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Sifarişinizi asanlıqla izləyin</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/16.svg" alt="wbp16"/>
-                            </div>
-                            <a class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Sayt Kalkulyatoru</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Saytın Qiymətini Öyrən</p>
-                            </a>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/17.svg" alt="wbp17"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">SEO Xidməti</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Axtarış Sistemi Optimizasiyası</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/18.svg" alt="wbp18"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Mobil Tətbiqlərin Hazırlanması</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Mobil tətbiq xidməti</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/20.svg" alt="wbp20"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Sosial Media Marketinq</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Sosial Media Marketinq</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col relative">
-                    <div onclick="opendd(15)" class="flex items-center font-bold text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
-                        <div>Şirkət</div>
-                        <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
-                    </div>
-                    <div id="dropdown15" class="flex-col py-[16px] rounded-lg border-slate-200 overflow-y-scroll border-[1px] hidden absolute top-[38px] bg-white z-[4000] dropdowns">
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/21.svg" alt="wbp21"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Haqqımızda</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Bizim komanda üzvlərimiz</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/22.svg" alt="wbp22"/>
-                            </div>
-                            <a class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Bloq</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Ən son xəbərlər və faydalı məlumatlar</p>
-                            </a>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/23.svg" alt="wbp23"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Bütün StartUplar</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Startupları idarə edən komandamıza qoşulun</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/24.svg" alt="wbp24"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Portfolio</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Hazırladığımız hər bir iş bizim üçün dəyərlidir</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/25.svg" alt="wbp25"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Karyera</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Hazırkı vakansiyalarımız</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/26.svg" alt="wbp26"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Freelance</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Sizdə qeydiyyatdan keçməklə freelance işləyə bilərsiz</p>
-                            </div>
-                        </div>
-                        <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
-                            <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
-                                <img class="h-auto max-w-[28px]" src="./icon/27.svg" alt="wbp27"/>
-                            </div>
-                            <div class="flex flex-col">
-                                <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Əlaqə Forması</p>
-                                <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Əlaqə Saxlayın</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flexr-row gap-[18px] items-center">
-                <div class="flex flex-col text-[#300B66] relative"> 
-                    <div onclick="opendd(8)" class="flex flex-row items-center gap-[10px] cursor-pointer">
-                        <span class="text-[22px] font-bold">₼</span>
-                        <div class="h-[20px] w-[20px]">
-                            <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-8mmkcg"><path fill="rgb(204, 204, 204)" class="hover:fill-[rgb(153,153,153)]" d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
-                        </div>
-                    </div>
-                    <div id="dropdown8" class="hidden flex-col position absolute h-[72px] text-[18px] py-[4px] border-[1px] min-w-[60px] bg-white border-[rgb(225,225,225)] rounded-[4px] font-bold top-[44px] left-[-3px] z-3000">
-                        <div class="pl-[18px] h-[32px] w-full cursor-pointer"><span>$</span></div>
-                        <div class="bg-[rgb(241,232,255)] h-[32px] pl-[18px] cursor-pointer w-full"><span>₼</span></div>
-                    </div>
-                </div>
-                <div class="flex flex-col text-[#300B66] relative"> 
-                    <div onclick="opendd(9)" class="flex flex-row items-center gap-[10px] cursor-pointer">
-                        <div class="h-[33px] w-[24px] flex items-center"><img class="h-[16px] w-[20px] object-cover" src="/icon/az.png" alt="flg"/></div>
-                        <div class="h-[20px] w-[20px]">
-                            <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-8mmkcg"><path fill="rgb(204, 204, 204)" class="hover:fill-[rgb(153,153,153)]" d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
-                        </div>
-                    </div>
-                    <div id="dropdown9" class="hidden flex-col position absolute h-[72px] pt-[3px] pb-[4px] border-[1px] min-w-[60px] border-[rgb(225,225,225)] rounded-[4px] font-bold top-[44px] left-[-3px] bg-white">
-                        <div class="pl-[18px] w-full h-[32px] cursor-pointer"><div class="h-[33px] w-[24px] flex items-center"><img class="h-[16px] w-full object-cover" src="/icon/usa3.png" alt="flg2"/></div></div>
-                        <div class="bg-[rgb(241,232,255)] h-[32px] overflow-hidden pl-[18px] w-full cursor-pointer">  <div class="h-[33px] w-[24px] flex items-center"><img class="h-[16px] w-full object-cover" src="/icon/az.png" alt="flg3"></div></div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col gap-[20px] ">
-                <button class="bg-[linear-gradient(90deg,#7028e4,#e5b2ca)] h-[41.91px] w-full cursor-pointer text-white text-[16px] font-bold rounded-[8px]">Qiymət Təklifi Al</button>
-                <button class="h-[43.91px] w-full rounded-[8px] font-bold border-[1px] border-[rgb(162,113,242)] text-[rgb(162,113,242)] cursor-pointer">Daxil olun</button>
-            </div>
-        </div>    
     </header>
+    <div id="sidebar" class="hidden flex-col w-[383px] min-h-[100vh] overflow-auto p-[24px] bg-white  border-l-[rgb(227,221,233)]  border-[1px] border-r-0 border-b-0 border-t-0 gap-[30px]  fixed top-0 right-0 z-9999">
+        <div onclick="opensb()" class="ml-auto cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </div>
+        <div class="flex flex-col gap-[30px] s:hidden py-[12px]">
+            <div class="flex flex-col relative">
+                <div onclick="opendd(11)" class="flex items-center font-bold text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
+                    <div >Veb sayt</div>
+                    <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
+                </div>
+                <div id="dropdown11" class="flex-col py-[16px] w-[334px] rounded-lg border-slate-200 hidden overflow-y-scroll border-[1px] absolute top-[38px] z-[4000] bg-white dropdowns">
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] hidden xs:flex bg-[rgb(219,234,254)]  items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/website-program.svg" alt="wbp1"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Saytların hazırlanması</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Veb saytların hazırlanması</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/lJ9i3mHSrGbIyOFk6VnqpcyzeZgiKmjyiUfdEhAc.svg" alt="wbp2"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Hökumət və qeyri-kommersiya saytları</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Hökumət və qeyri-kommersiya saytları</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/3.svg" alt="wbp3"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Kiçik biznes saytları</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Kiçik bizneslər üçün saytlar</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/4.svg" alt="wbp4"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">E-ticarət saytları</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">E-ticarət saytları</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/5.svg" alt="wbp5"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Hüquq firma saytı</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Hüquq firma saytı</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/6.svg" alt="wbp6"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Bloqlar və Şəxsi Vebsayt</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Bloqlar və Şəxsi Vebsayt</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/7.svg" alt="wbp7"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Daşınmaz əmlak veb saytı</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Daşınmaz əmlak veb saytı</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/8.svg" alt="wbp8"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Tibb - Doktor Saytlar</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Tibb Doktor Saytlar</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/9.svg" alt="wbp9"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">WordPress Saytları</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">WordPress Saytları</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col relative">
+                <div onclick="opendd(12)" class="flex items-center font-bold text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
+                    <div>Domen</div>
+                    <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
+                </div>
+                <div id="dropdown12" class="flex-col py-[16px] rounded-lg border-slate-200 overflow-y-scroll border-[1px] hidden absolute top-[38px] bg-white  z-[4000] dropdowns">
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/10.svg" alt="wbp10"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Domen</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Etibarlı xidmət</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/11.svg" alt="wbp11"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Pulsuz Domen Qeydiyyatı</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Sürətli qeydiyyat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col relative">
+                <div onclick="opendd(13)" class="flex items-center font-bold text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
+                    <div>Hosting</div>
+                    <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
+                </div>
+                <div id="dropdown13" class="flex-col py-[16px] rounded-lg border-slate-200 overflow-y-scroll border-[1px] hidden absolute top-[38px] z-[4000] bg-white dropdowns">
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/12.svg" alt="wbp12"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Veb Hosting</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">₼10.00/ay-dan başlayaraq</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/13.svg" alt="wbp13"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">VPS</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">₼15.00/ay-dan başlayaraq</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/14.svg" alt="wbp14"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Server</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">₼99.00/ay-dan başlayaraq</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col relative">
+                <div onclick="opendd(14)" class="flex items-center font-bold text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
+                    <div>Xidmətlər</div>
+                    <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
+                </div>
+                <div id="dropdown14" class="flex-col py-[16px] rounded-lg border-slate-200 overflow-y-scroll border-[1px] hidden absolute bg-white top-[38px]  z-[4000] dropdowns">
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/15.svg" alt="wbp15"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Vebsayt sifarişinizi izləyin</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Sifarişinizi asanlıqla izləyin</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/16.svg" alt="wbp16"/>
+                        </div>
+                        <a class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Sayt Kalkulyatoru</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Saytın Qiymətini Öyrən</p>
+                        </a>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/17.svg" alt="wbp17"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">SEO Xidməti</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Axtarış Sistemi Optimizasiyası</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/18.svg" alt="wbp18"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Mobil Tətbiqlərin Hazırlanması</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Mobil tətbiq xidməti</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/20.svg" alt="wbp20"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Sosial Media Marketinq</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Sosial Media Marketinq</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col relative">
+                <div onclick="opendd(15)" class="flex items-center font-bold text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
+                    <div>Şirkət</div>
+                    <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
+                </div>
+                <div id="dropdown15" class="flex-col py-[16px] rounded-lg border-slate-200 overflow-y-scroll border-[1px] hidden absolute top-[38px] bg-white z-[4000] dropdowns">
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/21.svg" alt="wbp21"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Haqqımızda</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Bizim komanda üzvlərimiz</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/22.svg" alt="wbp22"/>
+                        </div>
+                        <a class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Bloq</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Ən son xəbərlər və faydalı məlumatlar</p>
+                        </a>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/23.svg" alt="wbp23"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Bütün StartUplar</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Startupları idarə edən komandamıza qoşulun</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/24.svg" alt="wbp24"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Portfolio</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Hazırladığımız hər bir iş bizim üçün dəyərlidir</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/25.svg" alt="wbp25"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Karyera</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Hazırkı vakansiyalarımız</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/26.svg" alt="wbp26"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Freelance</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Sizdə qeydiyyatdan keçməklə freelance işləyə bilərsiz</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/27.svg" alt="wbp27"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Əlaqə Forması</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Əlaqə Saxlayın</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flexr-row gap-[18px] items-center">
+            <div class="flex flex-col text-[#300B66] relative"> 
+                <div onclick="opendd(8)" class="flex flex-row items-center gap-[10px] cursor-pointer">
+                    <span class="text-[22px] font-bold">₼</span>
+                    <div class="h-[20px] w-[20px]">
+                        <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-8mmkcg"><path fill="rgb(204, 204, 204)" class="hover:fill-[rgb(153,153,153)]" d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
+                    </div>
+                </div>
+                <div id="dropdown8" class="hidden flex-col position absolute h-[72px] text-[18px] py-[4px] border-[1px] min-w-[60px] bg-white border-[rgb(225,225,225)] rounded-[4px] font-bold top-[44px] left-[-3px] z-3000">
+                    <div class="pl-[18px] h-[32px] w-full cursor-pointer"><span>$</span></div>
+                    <div class="bg-[rgb(241,232,255)] h-[32px] pl-[18px] cursor-pointer w-full"><span>₼</span></div>
+                </div>
+            </div>
+            <div class="flex flex-col text-[#300B66] relative"> 
+                <div onclick="opendd(9)" class="flex flex-row items-center gap-[10px] cursor-pointer">
+                    <div class="h-[33px] w-[24px] flex items-center"><img class="h-[16px] w-[20px] object-cover" src="/icon/az.png" alt="flg"/></div>
+                    <div class="h-[20px] w-[20px]">
+                        <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-8mmkcg"><path fill="rgb(204, 204, 204)" class="hover:fill-[rgb(153,153,153)]" d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
+                    </div>
+                </div>
+                <div id="dropdown9" class="hidden flex-col position absolute h-[72px] pt-[3px] pb-[4px] border-[1px] min-w-[60px] border-[rgb(225,225,225)] rounded-[4px] font-bold top-[44px] left-[-3px] bg-white">
+                    <div class="pl-[18px] w-full h-[32px] cursor-pointer"><div class="h-[33px] w-[24px] flex items-center"><img class="h-[16px] w-full object-cover" src="/icon/usa3.png" alt="flg2"/></div></div>
+                    <div class="bg-[rgb(241,232,255)] h-[32px] overflow-hidden pl-[18px] w-full cursor-pointer">  <div class="h-[33px] w-[24px] flex items-center"><img class="h-[16px] w-full object-cover" src="/icon/az.png" alt="flg3"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-[20px] ">
+            <button class="bg-[linear-gradient(90deg,#7028e4,#e5b2ca)] h-[41.91px] w-full cursor-pointer text-white text-[16px] font-bold rounded-[8px]">Qiymət Təklifi Al</button>
+            <button class="h-[43.91px] w-full rounded-[8px] font-bold border-[1px] border-[rgb(162,113,242)] text-[rgb(162,113,242)] cursor-pointer">Daxil olun</button>
+        </div>
+    </div>    
     <main>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt animi dolores, deserunt, a asperiores aperiam quod, cupiditate sed sint est neque eius sequi suscipit explicabo tempora omnis. Tempore, hic dolorem!
+        Necessitatibus repellendus corporis doloribus alias veniam. Nostrum fuga nisi deleniti accusamus in maiores. Dolorem, eius, ab aut dolore fugiat excepturi sint autem incidunt unde doloribus expedita non optio porro inventore?
+        Itaque aperiam eum eveniet velit asperiores necessitatibus fuga aliquid minima. Nulla dolor nihil laboriosam, ullam sequi molestiae obcaecati reprehenderit consectetur, facilis asperiores quidem mollitia, provident neque? Aliquam eveniet molestiae cupiditate.
+        Asperiores, quidem molestiae. Neque voluptatem quod perspiciatis dicta aperiam odio consectetur officiis error itaque, enim ex fugiat aut! Magni vel possimus ad commodi tempore repellendus porro corrupti veritatis quasi qui.
+        Minus, dolores asperiores repellat, molestiae porro officia mollitia debitis, in temporibus obcaecati explicabo hic architecto placeat at laborum odit. Vel repudiandae esse praesentium, perferendis quia odio obcaecati excepturi placeat ab!
+        Nulla, officiis ullam eos doloremque libero enim quia officia sapiente exercitationem maxime consectetur tempore explicabo, dolorem omnis atque quas facere debitis suscipit blanditiis ipsam. Totam eos perferendis nostrum alias fuga?
+        Nesciunt, magnam, modi unde aperiam, ex officiis totam odio repudiandae quasi veniam ducimus aut laboriosam eligendi repellat labore assumenda tempora? Eveniet, impedit laborum. Sint eos doloremque qui neque eaque voluptas!
+        Itaque, saepe doloremque ab expedita vel repellendus illum ipsa molestias placeat cum! Iste, molestias doloribus. Illo necessitatibus rem, provident perferendis modi, dolores quisquam tenetur tempore vel velit quae assumenda! Iste!
+        Sit quas enim error inventore sapiente tempore magnam deleniti optio perferendis nihil minus illum, labore cupiditate laboriosam aperiam reiciendis dolor sed soluta, sunt voluptatibus. Ex expedita architecto recusandae eius voluptatibus.
+        Facilis debitis voluptatibus cupiditate voluptatem accusantium obcaecati repellendus praesentium, ducimus nam quae recusandae aut illo fugit id dolor voluptatum suscipit. Exercitationem, aperiam accusantium. Provident, quaerat? Quidem atque incidunt quisquam eius!
+        Assumenda recusandae, dolore mollitia explicabo tempora cum aut quo error? A nulla minima itaque voluptate doloribus, eligendi totam voluptatum natus maxime, nisi soluta ratione doloremque, fugiat aperiam facere quae molestias!
+        Dolores doloremque natus dicta nostrum ipsam rerum nam nesciunt harum libero repellat veniam rem illo dolorem laborum provident error tenetur aliquid nobis obcaecati voluptatum reprehenderit cupiditate ratione, amet alias. Harum?
+        Itaque, officia tempora laudantium dignissimos sunt vel nisi dolorem a blanditiis iure, nesciunt culpa? Error excepturi doloremque optio debitis aperiam expedita commodi ipsa blanditiis repudiandae harum, molestias corrupti ad libero?
+        Iste earum ut necessitatibus enim vitae dolor, harum facere porro nesciunt quis numquam voluptatem dicta cumque repudiandae minus delectus velit id? Cumque, beatae repellat! Assumenda earum quia quis animi repellendus!
+        Esse nemo officiis officia, dolore hic magnam, suscipit tempora sit quo, at omnis iusto repellat animi assumenda rem eaque illo ducimus consequuntur. Ducimus placeat ipsam possimus qui. Nisi, amet eum!
+        Obcaecati sapiente, voluptas atque, nulla ratione eaque accusamus minus mollitia minima omnis illum tempore necessitatibus nobis, deserunt recusandae illo nesciunt laudantium vitae. Eligendi commodi a nulla eos! Quaerat, minus minima!
+        Eum esse culpa exercitationem eos dolorem aliquam consectetur! Repudiandae tenetur, similique quas aliquid est quaerat atque possimus modi, quae vel quibusdam enim totam accusantium illo nostrum ex amet! Aperiam, est.
+        Pariatur corporis obcaecati commodi, iusto dolorem facilis officia! Facilis assumenda tempora, deserunt earum necessitatibus dolorem corporis amet in minus ipsum, doloribus, ut harum non ad nobis! Corrupti ea porro voluptatibus.
+        Tempora soluta cupiditate repudiandae itaque iure repellat ab tenetur rerum officia commodi laboriosam repellendus, iusto aliquid dolore impedit. Libero praesentium consequatur exercitationem similique error nihil culpa ex, quos sed in?
+        Quo, magni qui quisquam at distinctio consequuntur consequatur harum cupiditate recusandae, obcaecati quis incidunt! Mollitia maiores atque nostrum ab illum corrupti explicabo, placeat maxime esse iusto odio necessitatibus accusantium fuga?
+        Praesentium consequatur et eveniet id odio. Expedita ea aut eius minima quibusdam laudantium voluptatem tenetur. Est incidunt a ad, eos culpa debitis amet, officiis deleniti fuga vero vitae ipsum suscipit.
+        Error delectus nulla numquam atque doloribus sed, repellat, sapiente asperiores quisquam aliquam animi, eum quidem saepe quaerat aperiam! Laudantium repudiandae blanditiis non nemo, earum inventore mollitia quibusdam ex molestiae perspiciatis!
+        Tenetur rerum iusto sunt repellat modi, alias exercitationem deserunt. Possimus, laudantium a? Eum blanditiis dicta maxime velit ratione quibusdam iure aspernatur voluptatum, dolores doloribus aut ad quo consequatur, consectetur nemo.
+        Sint vitae consequatur saepe culpa, reiciendis eum animi optio ex beatae nihil debitis autem assumenda repellat dicta hic. Omnis, nihil expedita asperiores ad laborum aliquid et corporis saepe deserunt assumenda!
+        Illo dolorem, veniam porro cupiditate expedita quos in commodi unde eum similique ab, voluptatum nobis exercitationem nulla autem dolores a soluta repudiandae minus quas modi voluptas laboriosam natus consequatur? Doloremque.
+        Eius, harum illum, pariatur excepturi porro dicta molestias ut esse eos id fuga est libero officiis commodi, quis beatae. Recusandae, neque. Illum esse non a repellat iusto blanditiis sint cum.
+        Quod, saepe at consectetur doloremque sed ipsa eos quisquam sit nemo sunt recusandae fugit minus libero porro inventore autem dicta non magnam! Impedit excepturi veniam sunt. Numquam repellat officia sunt?
+        Ea rerum asperiores sunt fuga odio omnis, ullam reprehenderit recusandae quidem hic voluptate quas possimus accusamus illo, quae animi nulla reiciendis, ducimus architecto mollitia obcaecati dicta nisi facere consequuntur. Eos?
+        Rem optio ducimus repellat nam, illo, unde consectetur impedit natus sint, doloribus ut veniam ratione totam maiores deserunt doloremque! Architecto labore repellat temporibus nisi quas esse possimus praesentium aperiam laboriosam?
+        Quibusdam aperiam voluptas vero non possimus delectus a odio voluptatem doloribus earum quo inventore temporibus ea debitis magnam tenetur, neque iste nostrum aliquid nobis molestiae reprehenderit dolor. Eaque, ullam sapiente?
+        Expedita quas sapiente, consequuntur omnis ratione veniam esse quo modi iure voluptas ipsum, fugiat inventore. Blanditiis deserunt sed magnam totam porro asperiores quisquam aliquam? Ducimus exercitationem temporibus molestias illo reprehenderit?
+        Sed quae autem reiciendis eum. Esse vitae quis quaerat dolorum temporibus doloremque quod incidunt pariatur facere porro, cum deleniti, et harum, necessitatibus mollitia quam. Numquam dolores blanditiis aspernatur corporis explicabo?
+        Dignissimos asperiores enim quos rerum dolore quia iste, provident reiciendis voluptatem voluptas fuga eveniet magnam perspiciatis, doloribus distinctio illum velit ea odio. Reprehenderit exercitationem, eius est molestiae molestias voluptas porro.
+        Provident ducimus recusandae eveniet atque debitis error facilis quas harum? Id iusto nobis repellat error sunt labore perspiciatis distinctio nihil dolor minus, porro corrupti reiciendis a necessitatibus incidunt ratione assumenda.
+        Ipsum dolor officia fugiat quas eligendi perferendis quasi ut ipsa nihil ullam nemo, corrupti nobis animi rerum molestiae hic sit sapiente, consequatur eaque? Ab consectetur fugiat exercitationem reprehenderit harum optio.
+        Asperiores assumenda veritatis qui ex illum! Iure, est neque. Aliquam quaerat expedita quasi vel deserunt laudantium maxime maiores qui atque soluta veritatis, porro magni natus at deleniti molestias! Ipsa, consequuntur?
+        Iusto similique quisquam blanditiis sit architecto modi officiis rem a quia eum nesciunt laboriosam, consequuntur maiores quo veritatis optio? Ab animi, reiciendis asperiores tempore minima eius corrupti et voluptates nihil.
+        Non dolore similique nemo suscipit, modi veniam quisquam nisi. Vero eius ut inventore. Nostrum eius, suscipit iste sit repudiandae eum aut facilis perspiciatis voluptatibus voluptate debitis! Animi sapiente ratione voluptatem.
+        Molestiae, voluptatem, velit obcaecati pariatur excepturi unde voluptates aliquid iusto aliquam eligendi magnam minima perferendis quo aspernatur cupiditate dolor officia! Distinctio alias quia mollitia autem laborum recusandae ad natus impedit!
+        Exercitationem, necessitatibus minus temporibus dolore similique neque eligendi maxime incidunt ducimus consequuntur accusantium tempore placeat deleniti accusamus voluptate voluptas, cum enim sequi. Exercitationem adipisci, omnis nulla necessitatibus dolorem sed assumenda!
+        Adipisci, nesciunt? Nulla nesciunt cum beatae modi adipisci, earum ab unde quisquam aut pariatur quaerat harum! Architecto harum ut officia voluptatum dolorem. Et voluptatum at cumque ipsum architecto natus obcaecati?
+        Debitis corporis maiores nostrum explicabo dolorum nihil possimus veritatis officia nobis expedita ut quos, sit necessitatibus aperiam? Corrupti autem exercitationem earum, provident dolor doloribus illo, delectus aliquid nulla eius voluptas.
+        Voluptas est reprehenderit odit deserunt quasi, sed voluptatum rerum laborum ullam autem magni illum, modi at eos ratione? Labore laudantium impedit iusto ut quidem ad mollitia ex pariatur explicabo minima.
+        Possimus cumque natus quo laudantium expedita, dolore doloremque dolor labore excepturi non eveniet dignissimos animi incidunt eum quas sit autem voluptatum aliquam nesciunt commodi sed blanditiis neque! Laboriosam, explicabo impedit.
+        Magni a at ratione vitae iure! Voluptatem animi totam qui soluta, nam quam esse. Perspiciatis, sapiente saepe! Architecto, ipsa consequatur dolore sunt ipsam, error odio beatae porro laborum vel molestiae.
+        Aperiam sint necessitatibus saepe nisi neque consequatur magni nihil aspernatur. Mollitia voluptas, quidem numquam voluptatibus culpa vitae magnam ullam nulla necessitatibus assumenda! Eius optio ea laboriosam, in voluptatibus sunt quae.
+        Deleniti rem excepturi officiis. Tempore voluptas ex exercitationem soluta tenetur nihil provident ea, voluptatibus ad placeat, quibusdam magni eaque delectus cupiditate laudantium aliquam voluptate non autem ipsum iste vel quos!
+        Distinctio reprehenderit quo voluptas architecto repellendus quis, saepe ut dicta tenetur voluptatum labore delectus quisquam atque provident aliquam facilis nostrum culpa quam rerum amet animi dolorum. Aperiam, deleniti natus! Reprehenderit?
+        Fugit, nisi id! Incidunt dolor tempora, reprehenderit blanditiis fugiat nisi magnam velit sed, nesciunt cumque vitae numquam maiores ea voluptas enim in, nobis quibusdam dolorum voluptate corporis deleniti explicabo modi!
+        Fugit dignissimos eligendi officia facere mollitia tenetur sint nemo quisquam aspernatur, itaque et omnis repellat officiis odio asperiores nam, iure esse a. Esse accusantium commodi earum voluptatibus nesciunt corrupti reprehenderit!
+        Voluptatem dolore cum assumenda, est repudiandae aperiam quia. Corrupti inventore quasi sapiente recusandae ullam quod similique? Error sint, cumque reiciendis ab commodi, beatae labore repudiandae eos magni quas hic iure?
+        Eius magnam, temporibus asperiores nostrum porro tenetur voluptatum at soluta dolor dolore. Hic quis magnam sed commodi reiciendis non modi delectus, similique veniam minus deleniti quia esse aut consectetur voluptate.
+        Officia expedita iure deleniti recusandae numquam quisquam fuga nostrum explicabo suscipit asperiores, incidunt velit a itaque iusto, aliquid ipsum ipsa commodi ad quos alias culpa delectus cum eveniet! Ipsa, voluptas.
+        Ullam, itaque! Laborum cupiditate ad adipisci tempora totam inventore, sapiente rem iure suscipit ipsa deserunt placeat dolor qui autem, sed alias nam delectus sequi praesentium dolores ipsam. Expedita, amet laudantium!
+        At ea voluptate culpa. Recusandae facilis adipisci, sequi dolore beatae labore at, debitis cum aperiam consequuntur culpa eius quas sint similique deserunt. Sequi accusamus nobis deleniti! Sequi corporis illum earum.
+        Perspiciatis consectetur quibusdam suscipit architecto autem quis possimus accusamus repellendus, impedit, inventore placeat at cum recusandae enim hic? Quos quis voluptatum minima dicta, molestias neque aut nihil accusamus veniam labore.
+        Ad quo repudiandae, deserunt est aperiam ipsam, officia error aspernatur perferendis sapiente assumenda labore ab numquam aut quos quam qui inventore placeat. At eos fugiat repudiandae vitae temporibus culpa maxime!
+        Iusto dolores repudiandae quos numquam, sunt praesentium autem similique quia accusantium aut quod consequuntur provident debitis distinctio minus minima veniam ipsam eveniet, molestias mollitia ab dolore iure sed? Cum, distinctio.
+        Omnis possimus ullam magnam voluptatibus veniam ipsa consectetur voluptatem quaerat. Officiis sequi aut ad molestiae quae, nostrum aperiam debitis nisi, hic alias doloremque saepe reprehenderit amet veniam tenetur, nihil similique.
+        Velit, suscipit doloribus voluptatum ipsum soluta nisi maiores aperiam commodi eos temporibus iste, non impedit a excepturi consequatur? Nemo adipisci ad neque dignissimos dolore vel veritatis, minima repellat eos aut.
+        Eligendi ipsum quasi doloremque cumque consequuntur ducimus fugit mollitia, obcaecati nesciunt rerum illo iste ex at modi id consectetur quia provident delectus hic nulla dolore quos! Culpa voluptate aspernatur sit.
+        Nostrum illo deleniti officia suscipit qui at commodi dolorem cum nam. Sit ea incidunt perspiciatis cum optio nam eaque vel adipisci consectetur, maxime delectus amet suscipit recusandae nobis, tempore modi.
+        Inventore, quaerat, alias facilis autem dicta iste, id nisi tempore unde repellat earum aspernatur labore mollitia ea! Doloremque quod officiis et possimus, provident optio repellendus, ipsa rerum deserunt dicta quam?
+        Ad, nisi assumenda quisquam iusto rerum quo a molestiae earum, explicabo eius maiores. Quos soluta natus molestiae voluptatem, ducimus quo numquam nam dolorum in voluptatibus beatae aut laudantium nihil! Nihil.
+        Nam a molestiae quo repudiandae tempora est reprehenderit aliquam impedit inventore! Minima quod provident ducimus ratione nulla corrupti reiciendis dolorem possimus aspernatur facere rem nemo, asperiores nobis tempore. Commodi, tempore!
+        Esse, eius. Ab sunt esse illo, reiciendis quam aliquam dignissimos perferendis iusto praesentium debitis libero alias? Harum, suscipit necessitatibus itaque quibusdam totam, corrupti voluptates iusto consequatur cupiditate, modi perferendis exercitationem?
+        Magnam sint voluptatum commodi corporis aliquam quisquam obcaecati culpa alias praesentium rerum facere, voluptas dignissimos non ab quo excepturi fugit sunt ex inventore libero labore voluptatibus ipsum? Vel, molestias accusamus.
+        Dolorem alias pariatur eveniet officia totam, aliquam, dicta hic voluptatum commodi repudiandae eos minima fugit possimus ea esse iste omnis, eum ratione aperiam sequi placeat! Porro delectus amet obcaecati optio?
+        Laboriosam perferendis libero, ut sapiente cupiditate quasi atque sunt consequuntur eius neque aut, ab reprehenderit dicta cumque dolorum repudiandae, quibusdam fugit ad iusto delectus id nobis molestias. Ut, sequi corporis!
+        Modi placeat repudiandae praesentium velit dicta tempore rem laudantium necessitatibus et veritatis. Explicabo quisquam voluptate dolores officiis, vero natus esse? Natus voluptas repudiandae officiis dolorem a iste labore modi impedit?
+        Culpa consequuntur, quidem quis praesentium et perferendis molestias illo doloremque, quia esse reiciendis? Libero aliquid eius, sunt officia id nisi ipsam praesentium numquam saepe eos quae nihil facilis dicta tempora.
+        Ducimus consectetur porro quibusdam nihil quasi et. Delectus blanditiis deserunt iure alias, corrupti rem atque libero repellendus, optio quasi nesciunt praesentium odio mollitia facere quae maiores ipsum hic eveniet veniam!
+        Error, quaerat harum accusamus quam ab magni nisi, facilis esse at porro natus eum. Pariatur dolore repellendus adipisci repudiandae numquam quibusdam nobis dignissimos deleniti a neque? Cum soluta voluptate voluptas?
+        Veniam expedita voluptatem porro eius sit nulla libero reprehenderit unde ducimus, incidunt adipisci optio corrupti assumenda distinctio reiciendis eaque at ab hic error provident dolor aliquam, consequatur perferendis. Odio, dolore!
+        Facere saepe numquam quam earum laboriosam nisi alias esse. Distinctio labore dolor autem repudiandae, non facilis excepturi quidem. Corrupti a facere suscipit provident doloribus natus voluptatum cum laudantium officiis dolor.
+        Neque voluptate optio sapiente commodi nobis quisquam obcaecati illo eaque iste ratione possimus quis ut dicta magnam, ad quia eius deleniti enim? Sit, harum qui officiis laborum explicabo dolorem eum.
+        Non asperiores odit magnam magni maxime aliquam quo hic minus rerum culpa accusamus distinctio ipsam cum corporis, inventore illum quibusdam repudiandae possimus quia in voluptatibus quaerat ad. Praesentium, sed odit!
+        Ex sit provident sed! Quaerat cupiditate laboriosam necessitatibus numquam ratione hic? Delectus dolorem, itaque aspernatur voluptates debitis obcaecati nisi odio ipsa maiores sint quae blanditiis iure, eius aliquid natus magnam.
+        Reiciendis cupiditate fugiat officiis nisi assumenda. Soluta accusantium, obcaecati, molestiae unde aliquam corrupti rerum, nam doloribus id qui eius aliquid placeat quo iste harum vel voluptas. Aliquid vel maxime voluptatem?
+        Ea cupiditate consequatur iste eligendi dolorum iusto alias odit similique facere amet magni nobis a blanditiis necessitatibus voluptatibus at eius commodi illum dolore minus, ipsa natus vitae ab. Nam, nisi.
+        Quasi eum, sit repudiandae magni provident aliquid corrupti labore vitae quis, repellendus iste blanditiis exercitationem suscipit obcaecati quos natus. Excepturi voluptatem quasi in deserunt sint temporibus sequi nihil numquam ipsa.
+        Nam placeat fugit porro, dolore eaque harum magnam, nisi quibusdam deserunt quisquam est quaerat? Incidunt, nisi accusantium. Totam officiis iure voluptate consequatur aperiam incidunt ex earum minus corrupti. Consectetur, eius.
+        Velit cupiditate corporis, iste minus ipsa id ratione tempora hic cumque ea eos ipsam quidem optio a saepe quam consequatur praesentium. Sequi, qui quae autem iste dolorem non reprehenderit tenetur!
+        Veritatis impedit reprehenderit molestias voluptatum voluptatibus, accusantium nulla adipisci distinctio corrupti fugit deserunt a quo delectus minus ea qui ullam dolorum hic dolorem voluptates nobis. Voluptates incidunt mollitia in culpa.
+        Corrupti rerum esse, facere id iste reprehenderit a aliquid dolore ex corporis officiis veritatis beatae adipisci deserunt, quidem error quae atque eius dolores voluptas ratione. Obcaecati sint voluptatem earum pariatur?
+        Dolorum quasi, voluptates pariatur minima nisi voluptatum, obcaecati asperiores assumenda libero eaque voluptatem nam nemo deserunt, eveniet sapiente cumque quis. Aliquid cumque ut dolore quia sint id quas quos! Debitis.
+        Deserunt consequuntur soluta voluptates et aut ad obcaecati, quos illum tempore alias quo vitae eligendi sed cumque! Numquam expedita voluptatum sed atque sint suscipit debitis sequi odit nostrum, eum exercitationem!
+        Asperiores nihil praesentium, commodi porro vel numquam esse fugiat quidem exercitationem eaque laboriosam cupiditate aliquid tempora culpa distinctio aspernatur. Quis magni libero sed, pariatur molestias atque quos illo quo labore.
+        Adipisci iusto distinctio fugiat? Magni aliquam ipsa molestias, reiciendis et officiis consectetur enim provident eum recusandae aperiam saepe voluptatum odit soluta quasi nulla aliquid laboriosam eaque at odio libero nostrum.
+        Quis, deserunt soluta? Facilis, beatae facere veritatis perferendis, rerum voluptas porro eveniet sunt magni saepe vitae nobis ea! Magnam autem aliquid consectetur labore debitis earum recusandae adipisci exercitationem alias eveniet?
+        Beatae, deleniti nam voluptatem obcaecati aliquid doloremque culpa exercitationem eos et aut dolorem quas, quam vitae reiciendis ipsum fuga repellendus reprehenderit molestiae veniam cum quisquam ipsam illo? Tempora, doloribus quae.
+        Suscipit totam voluptate perferendis dolorum aperiam, accusamus aliquam dignissimos cupiditate, eaque omnis eos ut quia expedita molestias magnam velit rem, nihil placeat! Sint adipisci reprehenderit possimus illo eligendi, modi nesciunt!
+        Maiores officia adipisci commodi ullam ducimus sed sit amet ad recusandae error magni vitae, doloribus reiciendis voluptatibus. Exercitationem suscipit incidunt similique! Fugiat quibusdam sunt molestias ullam in laborum, architecto cum!
+        Mollitia dolores error asperiores aperiam ipsam odio voluptatem quasi, consequuntur blanditiis pariatur deserunt veritatis voluptate labore aliquid dolorem, sint natus quia nihil atque incidunt nobis saepe maxime eveniet! Iste, fugit.
+        Praesentium laboriosam cupiditate, rerum, ut, voluptatum aspernatur magni commodi aut repellendus adipisci aliquid illo. Omnis mollitia nisi, nobis laborum pariatur beatae porro temporibus quos blanditiis doloremque obcaecati velit alias rem.
+        Id facilis doloribus magni eius veniam ad, ratione distinctio omnis porro tempora ipsum sed atque, quae ipsa perferendis architecto sunt tempore magnam eligendi alias totam iure iusto! Ipsa, expedita voluptatibus?
+        Iste odit inventore eos illum recusandae earum ipsa sapiente suscipit placeat quasi, quia cupiditate ducimus obcaecati incidunt vero, fugiat a debitis labore architecto, dolorum molestiae dicta esse quidem! Quasi, molestiae.
+        Magni quam qui, quis, eius tenetur similique sapiente quia ipsum molestiae, laboriosam dolorum. Ullam facilis iure quos, veritatis odio doloribus, earum, voluptatum tempore cumque unde facere adipisci. Harum, veniam molestias!
+        Voluptatum voluptates nemo eveniet, accusamus quidem voluptate accusantium ad praesentium dolorem reprehenderit corporis, magni consequuntur, est dolore voluptatem tempore eaque sit? A et est aperiam dolore sequi. Provident, expedita modi.
+        Dolorum hic aliquid a natus assumenda sit, alias animi reprehenderit corrupti atque neque, dolore voluptatibus delectus architecto tempore dignissimos labore et. Ullam facere adipisci ex, soluta asperiores nisi omnis assumenda.
+        At impedit perspiciatis enim libero magnam, ipsum eius illum nostrum saepe pariatur, debitis dolorum reiciendis maxime molestias aliquid eveniet dolor minima molestiae dolore tenetur magni deserunt doloribus! Nostrum, maiores quod!
+        Tenetur ipsa natus esse explicabo hic et sapiente accusamus, vitae voluptates maxime similique assumenda ex, odit aut, sunt ad repellendus debitis at voluptatem officia inventore. Vero suscipit debitis nulla? Sunt.
+        Voluptate distinctio accusamus assumenda nobis neque vero, omnis numquam cum ullam placeat corporis iusto tenetur! Accusamus eius ad cumque tempore repellat atque rerum iusto amet! Assumenda blanditiis deleniti in molestiae!
+        Nihil sapiente voluptatem, vitae necessitatibus cumque aspernatur velit pariatur optio voluptatum doloremque aliquid magni porro nostrum esse asperiores quaerat aut, consequatur odio dolores non eligendi. Fuga tenetur doloribus quisquam rem?
+        Laborum numquam quod cupiditate hic atque inventore ducimus quis assumenda est eos iste, maxime et quasi quas totam vitae amet veniam! Ut consequuntur, vero odio illum cumque ipsam? Tempora, veniam!
+        Quos deserunt, tempore dolor similique corrupti iusto officiis ipsum quis quas repudiandae assumenda voluptates hic iste fuga qui! Explicabo earum repellat autem odio voluptate magnam! Deleniti unde voluptate commodi at.
+        Nostrum, ut in quam repudiandae itaque molestias sunt ducimus, ipsam unde earum, ipsa ea aperiam blanditiis! Reiciendis, quasi. Soluta veniam laborum numquam fugiat facere vitae molestiae vel voluptatem rem quas.
+        Eaque, dolorem eos maxime magni adipisci rerum corporis ullam labore! Asperiores, architecto ipsa pariatur odio mollitia commodi beatae quidem optio quaerat vitae provident ea numquam explicabo quisquam laborum, rerum itaque?
+        Voluptas distinctio sed, optio et laborum corrupti doloremque quasi officiis nihil praesentium minima necessitatibus corporis culpa illum eius laboriosam sint commodi. Optio inventore nesciunt modi consequuntur eveniet dignissimos quos minima?
+        Beatae a reprehenderit voluptatibus architecto similique debitis perferendis! Alias voluptatem quod similique veniam cupiditate, nostrum ipsam facere. Reprehenderit quia quaerat ducimus omnis magni eos, et nobis repudiandae fugiat numquam recusandae.
+        Natus aspernatur magnam corporis, possimus aperiam deleniti repellat corrupti dolorem minima recusandae iste quos adipisci tenetur laudantium nobis et impedit in molestias sapiente dicta voluptatem. Fugiat perspiciatis optio expedita quibusdam!
+        Ut quam in consequuntur dolorem! Dignissimos eum a assumenda earum officia ab adipisci saepe veniam nostrum, repellat omnis voluptatum, voluptatibus nihil velit dolorem harum rerum natus? Architecto at sunt ad?
+        Error nobis aliquam dignissimos qui, quasi recusandae aliquid odio unde? Consectetur unde explicabo earum maxime quo, qui eveniet modi, odio a voluptates, dolore enim sapiente suscipit dolorem dignissimos quae. Mollitia.
+        Sapiente, necessitatibus accusantium doloribus eos, voluptates ab repellat quod iusto rem velit tenetur odio sint illum corrupti pariatur nihil expedita aliquam nulla, inventore ipsa quos quam ratione. Cumque, dicta laboriosam!
+        Aperiam veritatis sint tempore aspernatur eveniet ipsa ad dignissimos deleniti voluptas quos aut optio molestiae blanditiis modi eum atque, aliquam rerum at vero, error deserunt maxime delectus quisquam. Natus, reprehenderit?
+        Ipsa tempore molestiae laudantium quia repellendus voluptates sunt cumque vel velit reiciendis quaerat doloremque nihil, natus ab maxime fugiat iste delectus quod. Perspiciatis dolore, natus consequuntur rerum saepe aliquid veniam!
+        Fugit quidem, tempore tempora excepturi quibusdam dolor fuga, in repellat praesentium nesciunt deserunt asperiores. Magnam quidem explicabo sed temporibus delectus. Eius nulla est veniam quia blanditiis ipsam culpa in animi.
+        Incidunt voluptas, asperiores ex quibusdam consequuntur consequatur veritatis iusto blanditiis nisi fugit eligendi cum? Sed possimus id officiis accusamus saepe tempora hic nihil at ad nisi iste veniam, asperiores corporis.
+        Illo quam facilis ipsa aliquam vitae, tenetur adipisci, eaque, dicta in optio rem nesciunt ad veritatis omnis. Eveniet, voluptatibus? Est impedit, tempora voluptas explicabo nesciunt magni amet a ea harum.
+        Dolorum corporis unde id officiis voluptas explicabo ipsam iste omnis harum modi natus inventore fugiat, assumenda tempora veniam quibusdam perferendis nam officia ea, non blanditiis repellat dicta repellendus! Fugit, earum!
+        Quisquam tempore, quos ipsa odit unde sed ut nulla, aut recusandae iste nostrum laboriosam asperiores. Exercitationem, ipsam dolor consequatur nulla eos error eveniet amet, doloribus pariatur incidunt ratione unde asperiores.
+        Commodi eveniet eos facere assumenda? Doloremque rem, aliquam velit iste recusandae, veniam eum expedita impedit eius eos vero delectus, dolorem nihil rerum? Asperiores, facere assumenda natus amet tenetur quam cum.
+        Repellendus molestias harum modi nesciunt blanditiis delectus amet iste, odit mollitia. Enim dignissimos minima laboriosam cum earum nihil dolorum quidem est. Aut nam dolore fugiat atque blanditiis officiis accusamus sapiente.
+        Adipisci omnis accusamus quibusdam sequi cumque qui deleniti minima. Iste repellendus consectetur eaque voluptas, delectus quaerat facilis. Reprehenderit magnam itaque quaerat sequi assumenda consequuntur, ipsam aspernatur aut nobis delectus cum.
+        Explicabo illo, adipisci autem fugit distinctio tempore recusandae doloribus accusamus sed voluptate, incidunt, quia eum nemo similique laboriosam mollitia dolor voluptatibus. Libero magnam debitis, vero sequi cupiditate nesciunt hic animi!
+        Nostrum beatae odit animi asperiores soluta voluptatum velit possimus! Ad neque, unde mollitia vitae modi libero officia voluptates praesentium quam eos magnam ratione, incidunt deserunt? Vitae fugiat libero eaque commodi!
+        Obcaecati reprehenderit facere nam ullam laborum aliquam fugit possimus. Ad ut, sapiente maxime consectetur deserunt vitae modi officiis hic odio, perferendis explicabo, sequi dicta itaque natus vel? Et, at est!
+        Exercitationem excepturi vel incidunt, debitis hic ut voluptatum, reiciendis quibusdam qui delectus eius ad repellat similique eum sunt quos a illo molestiae officiis doloribus, maxime vero dolores cumque! Laboriosam, perferendis?
+        Expedita aperiam distinctio molestiae eius similique voluptates quaerat sapiente quia nihil molestias natus ipsum odit consectetur dicta omnis sit quam quo sed delectus alias saepe ipsa veniam, necessitatibus qui. Inventore.
+        Optio nam, dolores tempora rerum amet quasi laboriosam cum doloremque cupiditate aliquid deserunt eveniet incidunt nemo laudantium. Accusantium esse cupiditate quaerat reprehenderit animi, amet blanditiis dolor, ut dolorem aliquid in.
+        Recusandae velit dignissimos aspernatur corrupti minus explicabo incidunt magnam atque repudiandae eaque quos laboriosam totam tempore ipsam reprehenderit, quam vitae odit maxime doloremque aperiam. Quisquam libero eveniet odio molestias tempora.
+        Dolor iste aliquid suscipit repellendus saepe, fugiat sequi odio porro vitae voluptas id cumque, veritatis doloremque corrupti cupiditate maxime. Doloribus voluptatum natus impedit obcaecati quas cum mollitia animi expedita atque!
+        Inventore distinctio expedita rerum neque tempore eligendi totam dolore nisi ea voluptatem quasi perspiciatis esse quibusdam, fugit at odio, veniam blanditiis harum aut voluptas ducimus labore? Doloremque alias maiores natus.
+        Dolorem cum reiciendis eligendi atque rem consequatur architecto perferendis, velit laudantium vero, incidunt perspiciatis quae earum illo? Odio accusantium facilis alias optio quia odit est, iste animi! Porro, maxime tempore?
+        Ipsa quasi, pariatur laboriosam debitis eveniet dolore sed consectetur necessitatibus? Cumque ducimus enim iste provident placeat quod, aut quo, amet similique excepturi voluptate? Dolorem laborum hic odio voluptas repudiandae aliquam.
+        Pariatur amet natus ea libero eaque, praesentium vitae totam quasi sapiente eveniet sed numquam ducimus dolor accusantium ab repellat eum ullam voluptate laborum quos! Similique, delectus! Laudantium sed odio obcaecati.
+        A explicabo, ullam cumque, veritatis reiciendis ipsum modi magni atque ad perspiciatis consequuntur sequi praesentium quo asperiores dolorem aspernatur. Distinctio eaque minus nam incidunt veniam iure quo ipsam impedit sunt.
+        Qui quos tempora provident amet. Reprehenderit atque quaerat exercitationem. Accusantium deleniti harum optio explicabo modi ullam, obcaecati officiis dolorum vel sequi tempora saepe quas neque, ipsum rem quibusdam reprehenderit animi.
+        Quaerat impedit accusamus magni magnam explicabo pariatur id suscipit error eum incidunt aperiam illum tempore, ratione labore? Libero cupiditate quidem aut porro, ut itaque ducimus soluta! Sunt natus ipsum rerum?
+        Quisquam voluptas fugit beatae dolores, atque aliquam eum cupiditate velit iste. Consectetur officiis sapiente perspiciatis fuga, at aliquid beatae odit? Architecto nisi, rerum aliquam animi exercitationem numquam. Rem, dolore blanditiis.
+        Harum, fuga dignissimos maxime doloremque laudantium laboriosam illum. Aliquid cumque, accusamus adipisci tempora fugiat voluptate iure molestiae dicta! Deleniti quam perferendis magnam, quisquam perspiciatis temporibus dolor delectus consectetur veritatis optio!
+        Ipsam odit atque illum officiis esse repellat enim ducimus distinctio pariatur, dolore possimus in magnam dolor libero, provident beatae et rerum. Cumque est alias accusantium a vel nobis sapiente. Voluptatibus.
+        Voluptates quidem quo quia porro! Iure, expedita quos voluptatum, pariatur, ratione in cum error vitae autem provident iusto eos? Sapiente alias quasi ducimus suscipit magni provident aspernatur architecto quod? Ratione!
+        Eligendi corporis tempore iusto. Delectus neque harum rerum asperiores quae! Deserunt unde illo tempora eum enim, facilis laboriosam, corporis minus reiciendis libero sequi? Ab fuga at ipsa debitis officia consequuntur!
+        Dolore qui enim maiores consequatur, blanditiis totam. Commodi fuga soluta vel ut provident doloribus nemo laboriosam explicabo veniam voluptas, porro quibusdam aperiam, perspiciatis suscipit consequatur. Asperiores rem voluptates maiores voluptatum.
+        Maiores aliquam nam consequatur temporibus minima placeat praesentium similique possimus ratione nesciunt? Aut similique impedit velit, quibusdam quisquam praesentium harum incidunt doloribus possimus quo ea sint numquam recusandae deleniti vel.
+        Tenetur optio, corrupti voluptas ad inventore nisi, harum vitae sapiente explicabo nostrum odit a quibusdam pariatur impedit eligendi ullam maxime fugiat aperiam molestias. Voluptatem ea dolorem qui ducimus quidem aperiam.
+        Aspernatur laboriosam quas hic quasi! Voluptates quod, sed nobis quibusdam nesciunt nisi. Quidem placeat dolorum accusamus. Aspernatur, iure laboriosam. Architecto consectetur aliquid ab praesentium doloremque, et molestiae consequatur maxime officiis?
+        Distinctio eius consectetur quod hic quae, voluptas ex quam veniam aperiam! Aliquam debitis molestias nobis, necessitatibus itaque enim quisquam quia impedit fugit cupiditate facilis. Voluptatem neque dolor rem ut sequi?
+        Veritatis itaque eligendi voluptate nam id, ea nobis perferendis esse harum repellendus enim aperiam quis est deleniti eveniet dolorum quod debitis quasi expedita minima. Voluptates ex quis ut suscipit quidem!
+        Labore, exercitationem quis aperiam ratione, dolor perspiciatis similique quam quo facilis, perferendis minima porro accusamus quaerat ad saepe cum rerum ipsa nisi necessitatibus eius nemo nobis quae. Amet, commodi soluta!
+        Necessitatibus harum qui eligendi facere repudiandae repellendus at excepturi culpa, aliquid consectetur quae impedit suscipit temporibus, rem, magni accusamus exercitationem fugit. Eveniet molestiae quae modi tenetur quam cumque, at alias!
+        Laborum reiciendis numquam accusamus adipisci quasi temporibus facilis itaque dignissimos minima eos necessitatibus aperiam, corporis sunt laboriosam inventore obcaecati asperiores, cumque pariatur dolores culpa expedita a. Earum nam labore maiores.
+        Veritatis, ratione minima cupiditate quasi necessitatibus provident eligendi modi ipsa voluptates praesentium? Ut eius fuga eligendi obcaecati, architecto dolores explicabo cumque eaque at aspernatur maxime ducimus autem velit dicta quas?
+        Minima praesentium laboriosam iste earum veniam facere, ipsam inventore totam, necessitatibus porro ratione recusandae reiciendis officiis in, quos quia dolorem incidunt soluta cupiditate qui nemo fugit perspiciatis! Facilis, laboriosam fugit?
+        Veritatis odio nobis enim nostrum eveniet officia odit! Dolorum, vel cupiditate suscipit quae obcaecati sapiente enim modi labore doloremque tenetur cumque quaerat quia repudiandae. Dolorem iure pariatur doloremque quod eveniet?
+        Dolor, recusandae cupiditate veritatis aspernatur molestias quis possimus explicabo vero accusamus deleniti veniam, minima at numquam! Sequi iste, mollitia, eaque dolores distinctio quidem laborum dicta quasi ab, odit consequuntur fuga.
+        Quasi, rem quisquam, qui doloribus cupiditate labore vel nesciunt, eaque quis non fugit ratione deserunt. Voluptatem, praesentium. Sint ad necessitatibus voluptatem sit, earum labore fuga, fugiat pariatur beatae, deleniti optio.
+        Repellendus, nostrum non perferendis eos iure modi provident pariatur eius quasi cumque vitae fugiat magni libero accusantium nobis fugit, fuga laboriosam id quidem, numquam distinctio sunt molestias? Nam, autem nisi.
+        Id quis, aliquam adipisci eius dolores consequatur praesentium qui impedit ipsa obcaecati dolorem earum voluptas, quidem excepturi ad nisi ducimus veritatis? Velit blanditiis illo, unde sint quam provident rem impedit?
+        Pariatur unde iusto id soluta debitis cum earum eius expedita eligendi, magnam, blanditiis ad. Suscipit natus itaque quasi recusandae harum eaque cum tempore perspiciatis. Dolorem libero dolore voluptas aspernatur placeat?
+        Quos enim quasi neque iusto voluptas nesciunt odio fugit obcaecati ea, assumenda, nisi cumque nulla, atque quibusdam commodi quae mollitia ducimus doloribus id eius! Id cum repellat quas hic omnis!
+        Distinctio unde tenetur alias consequatur excepturi nemo dolores ullam. Laborum nesciunt autem temporibus aperiam adipisci, officia doloribus ratione. Ut illo accusantium natus quisquam quidem, cum veniam dolorem rerum quas nam?
+        Reiciendis neque est maxime ratione porro, vero ex cupiditate non quas id! Delectus quibusdam aut obcaecati quos accusantium fugiat, voluptatem laudantium explicabo quam earum rerum libero suscipit sapiente ut reiciendis?
+        Vel accusantium, ipsum necessitatibus aut quia reiciendis molestiae commodi nostrum dolor! Nobis sapiente porro nesciunt consectetur, itaque dolorum dignissimos explicabo iusto delectus. Vel cumque sapiente perferendis laborum ex adipisci voluptatem!
+        Earum eligendi totam obcaecati commodi atque ipsam sit a omnis ut, perspiciatis nobis nemo doloremque minima ea beatae, quisquam quam corporis porro doloribus consequuntur explicabo ratione, ipsum tempora? Odit, pariatur?
+        Odit minima quod sapiente aut, dicta, impedit facere itaque iure adipisci animi iusto, ducimus dolorem quas iste fugiat asperiores facilis quasi dignissimos quidem eveniet? Corporis excepturi maiores tempore modi repellat.
+        Temporibus exercitationem reiciendis illum quod natus. Natus fugiat eos quisquam maiores deleniti, fuga consectetur neque ducimus, quaerat autem ipsum voluptatibus facilis iusto odio, laboriosam praesentium inventore voluptatem alias nam explicabo.
+        Consectetur error itaque vel similique, voluptatibus omnis maiores neque dicta eum perspiciatis ratione modi asperiores alias repudiandae fugiat, possimus magnam voluptate tenetur doloremque pariatur consequatur molestiae adipisci. Aliquid, repellendus quidem!
+        Quas dolor deserunt reiciendis quibusdam minus corrupti officiis doloribus necessitatibus, accusamus distinctio nobis, quod sed magni sint consequatur quos culpa tenetur architecto rem magnam quia fugit. Maxime mollitia dolor temporibus!
+        Quas doloremque recusandae error eius fugiat eaque blanditiis beatae inventore corrupti obcaecati, eligendi sapiente nisi veritatis, maxime molestias quisquam? Cum vitae recusandae ipsam id repellat voluptas laboriosam maxime suscipit a?
+        Voluptate omnis doloribus ipsam beatae quis dignissimos vitae minus ab iste provident perferendis quasi unde eos nisi fuga molestiae fugiat modi quidem, ad soluta. Nam, facilis. Nulla obcaecati perspiciatis doloribus.
+        Voluptate nisi veritatis a neque esse iusto? Aperiam dolore, cum quos officia magnam impedit exercitationem quas adipisci, vero maxime, quis laudantium atque iure blanditiis aspernatur sapiente accusantium labore nam possimus?
+        Iure ad fugiat excepturi amet nulla cum ex iste beatae alias eius autem veniam rerum, quia unde perspiciatis sunt temporibus quos sit, rem voluptatibus, saepe quas dignissimos fugit eaque. A.
+        Eos, maiores nisi unde perferendis iusto tenetur et necessitatibus quae illo explicabo architecto inventore exercitationem in voluptatem doloremque dignissimos officiis ut! Soluta obcaecati, itaque nisi voluptates nihil eius dicta eveniet.
+        Dolor rem laboriosam eaque aut, quisquam voluptas non minima voluptatum eligendi temporibus nesciunt amet atque, laborum similique ipsa dolorum tenetur quia! Laboriosam enim ab deserunt hic dicta accusamus animi doloribus.
+        Illum inventore eum labore iure rerum tempore eaque ipsam est sunt, provident nostrum suscipit nobis. Unde, expedita laudantium fugit, repudiandae itaque nesciunt eligendi voluptates mollitia, nobis fuga esse minima adipisci.
+        Similique, unde maxime? Assumenda blanditiis odio, repudiandae placeat iste soluta! Expedita odio veniam culpa qui dolores tempore, doloremque ea dolor soluta? Nemo beatae inventore id deserunt sequi tempore omnis neque!
+        Ullam ipsa quos pariatur, a animi enim sit natus aspernatur dolor quaerat expedita inventore nobis earum error ab vitae laborum, illo accusamus minus molestiae soluta minima! Unde expedita nam nobis!
+        Impedit natus quasi fugiat temporibus ab quaerat unde mollitia ad deserunt. Esse rem tempore commodi quas dicta, recusandae, doloribus obcaecati quis modi quisquam, adipisci veritatis voluptate porro beatae assumenda ipsum.
+        Mollitia corporis eius tenetur ullam molestias adipisci quisquam rerum sit praesentium aliquam deserunt quos voluptates soluta, ipsum reprehenderit eum optio provident cum quae dicta. Dolore quod minus distinctio deserunt? Ratione.
+        Deleniti ipsum voluptas ab repellendus tempore voluptate voluptatem quis incidunt nesciunt aspernatur facilis dolore hic, culpa molestiae deserunt dolor aliquid placeat natus quisquam distinctio ipsam corporis vero corrupti dolorum. Et.
+        Ex, laboriosam perspiciatis. Nesciunt, laboriosam voluptatem magni beatae ipsam odio, facere itaque nulla ducimus possimus dolores optio aliquam minus. Vitae consequuntur, corrupti molestiae ducimus fuga consectetur nesciunt rem distinctio voluptatum.
+        Tempore quasi illum nulla consequatur! Saepe aut exercitationem esse dignissimos voluptatibus necessitatibus libero ab non et nihil temporibus id ut, blanditiis, provident cum obcaecati quis aliquam numquam possimus cumque placeat.
+        Cum delectus asperiores minus illum quos perferendis corporis corrupti magnam labore suscipit, ab nulla vitae voluptate in laborum sapiente dicta rerum odit! Quod adipisci dicta in aliquid rem accusamus eaque.
+        Quaerat sapiente repudiandae odio magni, rem reprehenderit, repellendus illo et ipsa dicta error minima fuga expedita ut adipisci beatae, eaque dignissimos. Dolorem placeat labore deleniti veritatis cumque suscipit perspiciatis. Obcaecati.
+        Doloremque doloribus nisi laborum iusto alias ducimus voluptate at amet, deleniti minima. Neque sapiente architecto doloremque tenetur sint quaerat, libero, rem odit molestias aspernatur beatae sunt fuga accusantium ipsam? Fugit?
+        Ea consectetur dolores magni nihil, mollitia, voluptatum ratione facere voluptates voluptas hic esse adipisci impedit! Tenetur magni suscipit aliquid blanditiis sint quaerat ab, qui reiciendis tempora quia animi, corporis cum.
+        Mollitia odio necessitatibus maxime quidem iusto unde ipsa, distinctio totam molestias ipsam. Rerum distinctio totam et incidunt laudantium eligendi. Placeat, totam consequuntur velit labore minima sunt similique facere ab id.
+        Ut minima tempore eligendi placeat error totam omnis possimus in, saepe obcaecati enim eaque accusamus cumque tenetur voluptas expedita similique autem molestiae vitae! Hic id libero nam ipsa quae ad.
+        Hic, error iste sequi aspernatur facilis quaerat ad facere saepe eligendi delectus accusamus maiores qui. Voluptas, nam quos ratione earum aut est deleniti repudiandae, voluptatem, nostrum maiores voluptates cum enim.
+        Nam exercitationem ipsum nostrum sit eveniet. Ipsum sed deserunt odit debitis fuga quisquam, odio nobis voluptas totam perspiciatis, asperiores officiis magnam optio. Libero corrupti cum vel natus nihil odit quidem.
+        Dolor consequuntur asperiores molestiae qui iure, deserunt excepturi reprehenderit tempora incidunt placeat odio officiis omnis velit est! Nostrum eligendi pariatur nobis, eos sint eveniet amet accusantium? Delectus inventore temporibus aliquid?
+        Neque nulla voluptatem esse voluptatum temporibus consequuntur ad vel atque sequi veritatis. Nostrum vero quas assumenda sequi sed odit modi ipsam error iste eligendi. Assumenda itaque voluptatum repudiandae aperiam earum.
+        Sit dolores ea modi animi sapiente cum pariatur necessitatibus praesentium, quasi temporibus tenetur odit, nam, commodi hic eius maiores? Deleniti, error similique iusto distinctio illo ratione sint recusandae dolorum facere!
+        Debitis ratione vitae tempora similique nostrum quam, iure dicta non earum ex nam sapiente quos. Eveniet ea sequi autem labore beatae consequuntur aliquid corrupti nulla quo, perferendis neque et nam?
+        Minus nihil, vero maiores temporibus modi veritatis eum culpa earum. Harum, alias odit? Asperiores nulla obcaecati laudantium. Corrupti architecto eos dolores labore, voluptatum, ex earum libero aliquam et blanditiis ut.
+        Nobis deserunt est, accusamus mollitia sed quam aliquam repudiandae? Sapiente repellendus obcaecati temporibus quaerat a placeat aspernatur distinctio expedita quo eum exercitationem velit tempore ipsa, blanditiis aliquid possimus nesciunt iure?
+        Ex reiciendis accusantium fuga illum delectus atque voluptatibus veniam cupiditate. Eius, delectus. Iusto unde at velit sapiente sit officia delectus, molestias odio eius est dicta officiis, voluptas nihil nesciunt nam?
+        Ipsum blanditiis autem, beatae voluptates, delectus impedit aliquam aperiam eveniet sint unde quod possimus vel perferendis molestias, odit repellendus at quasi. Nostrum natus fuga, enim quaerat possimus commodi inventore fugit!</p>
         <div class="sm:pt-[250px] heroHeader sm:pb-[340px] sm:h-screen-minus-88 max-h-[100vh] sm:text-[24px]   sm:leading-[55px] sm:tracking-[0.2px] relative flex flex-col justify-center items-center mx-auto lg:px-[20vw] lg:py-[100px] text-center text-slate-700 h-screen-minus-90"><h1 class="sm:mb-4 sm:px-4 md:text-xlg lg:text-xxlg font-medium mb-8 px-10">Biznesinizi bizimlə rəqəmsal dünyada <span class="sm:mx-4 md:mx-6 text-blue-600 relative lg:mx-[30px] text-5 whitespace-nowrap">daha asan<i class="absolute sm:top-[-20px] sm:left-[-15px] md:left-[-18px] md:top-[-25px] lg:top-[-25px]"><img alt="Home-image" loading="lazy" width="278" height="120" decoding="async" data-nimg="1" class="max-w-[110%] max-h-[110%]" style="color:transparent" src="/icons/easier.svg"></i></span> yoldan irəliyə apar!</h1><p class="sm:px-4 sm:text-base sm:mb-8 font-normal leading-10  text-slate-500 lg:text-[20px] lg:px-[140px] mb-12">Mütəxəssislərdən ibarət komandamız sizə müştəri dəstəyi və texniki yardım göstərmək üçün 24/7 hazırdır.</p><button class="border-[3px] border-[#A271F2] px-8 py-5 rounded-lg text-blue-600 text-[16px] leading-[10px] font-medium md:mb-[153px]" fdprocessedid="l5lr5r">Sayt Sifariş Et</button><i class="cursor-pointer absolute bottom-10"><span class="scroll__items"><img alt="Home-image" loading="lazy" width="30" height="50" decoding="async" data-nimg="1" style="color:transparent" src="/icons/check.svg"><span class="absolute top-2 left-2 scroll__items-circle"><img alt="Home-image" loading="lazy" width="14" height="14" decoding="async" data-nimg="1" class="max-w-[14px] max-h-[14px]" style="color:transparent" src="/icons/circle.svg"></span></span></i></div>
     </main>
-
     <script src="./js/header.js"></script>
 </body>
 </html>

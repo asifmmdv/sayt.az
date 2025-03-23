@@ -21,7 +21,7 @@ function opendd(x) {
     }
 }
 
-function opensb() {
+/* function opensb() {
     const sidebar = document.getElementById('sidebar');
     const alldropdowns = document.querySelectorAll('.switch');
 
@@ -32,5 +32,27 @@ function opensb() {
 
     // Toggle the sidebar
     sidebar.classList.toggle('opensb');
+} 
+
+*/
+function opensb() {
+    const sidebar = document.getElementById('sidebar');
+    const alldropdowns = document.querySelectorAll('.switch');
+    const body = document.body;
+
+    // Close all dropdowns if any are open
+    alldropdowns.forEach(dropdown => {
+        dropdown.classList.remove('switch');
+    });
+
+    // Toggle the sidebar
+    sidebar.classList.toggle('opensb');
+
+    // Toggle the body's overflow property
+    if (sidebar.classList.contains('opensb')) {
+        body.classList.add('no-scroll');
+    } else {
+        body.classList.remove('no-scroll');
+    }
 }
 

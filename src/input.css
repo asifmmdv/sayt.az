@@ -40,3 +40,7 @@ main{
 .opensb{
   display: flex;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

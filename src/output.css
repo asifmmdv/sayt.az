@@ -276,9 +276,6 @@
   .isolation-auto {
     isolation: auto;
   }
-  .z-999 {
-    z-index: 999;
-  }
   .z-1000 {
     z-index: 1000;
   }
@@ -422,6 +419,9 @@
   }
   .mx-auto {
     margin-inline: auto;
+  }
+  .mt-\[8px\] {
+    margin-top: 8px;
   }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
@@ -581,12 +581,6 @@
   }
   .min-h-\[100vh\] {
     min-height: 100vh;
-  }
-  .min-h-\[3000px\] {
-    min-height: 3000px;
-  }
-  .min-h-full {
-    min-height: 100%;
   }
   .min-h-screen {
     min-height: 100vh;
@@ -1152,9 +1146,6 @@
   .overflow-hidden {
     overflow: hidden;
   }
-  .overflow-y-auto {
-    overflow-y: auto;
-  }
   .overflow-y-scroll {
     overflow-y: scroll;
   }
@@ -1524,8 +1515,8 @@
   .p-\[10px\] {
     padding: 10px;
   }
-  .p-\[24px\] {
-    padding: 24px;
+  .p-\[32px\] {
+    padding: 32px;
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
@@ -1641,6 +1632,10 @@
   .font-\[500\] {
     --tw-font-weight: 500;
     font-weight: 500;
+  }
+  .font-\[800\] {
+    --tw-font-weight: 800;
+    font-weight: 800;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -2220,11 +2215,6 @@
       display: none;
     }
   }
-  .max-m\:opacity-0 {
-    @media (width < 1280px) {
-      opacity: 0%;
-    }
-  }
   .max-s\:hidden {
     @media (width < 1024px) {
       display: none;
@@ -2238,16 +2228,6 @@
   .s\:hidden {
     @media (width >= 1024px) {
       display: none;
-    }
-  }
-  .m\:opacity-0 {
-    @media (width >= 1280px) {
-      opacity: 0%;
-    }
-  }
-  .m\:opacity-1 {
-    @media (width >= 1280px) {
-      opacity: 1%;
     }
   }
   .sm\:top-\[-20px\] {
@@ -2367,8 +2347,8 @@
 body {
   font-family: "Manrope",sans-serif;
 }
-main {
-  font-family: "Inter", Helvetica,Arial, sans-serif;
+#sidebar {
+  font-family: "Inter",Arial, Helvetica, sans-serif;
 }
 .dropdowns::-webkit-scrollbar {
   width: 5px;

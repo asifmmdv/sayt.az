@@ -10,8 +10,8 @@ body{
     font-family: "Manrope",sans-serif;
 }
 
-main{
-  font-family: "Inter", Helvetica,Arial, sans-serif;
+#sidebar{
+  font-family: "Inter",Arial, Helvetica, sans-serif;
 }
 
 .dropdowns::-webkit-scrollbar {

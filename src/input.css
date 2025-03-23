@@ -1,17 +1,18 @@
 @import "tailwindcss";
 
 @theme {
+    --breakpoint-2xs: 340px;
     --breakpoint-xs: 768px;
     --breakpoint-s: 1024px;
     --breakpoint-m: 1280px;
   }
 
-body{
+header{
     font-family: "Manrope",sans-serif;
 }
 
-#sidebar{
-  font-family: "Inter",Arial, Helvetica, sans-serif;
+body{
+  font-family: "Inter", Helvetica, sans-serif;
 }
 
 .dropdowns::-webkit-scrollbar {

@@ -45,3 +45,9 @@ body{
 .no-scroll {
   overflow: hidden;
 }
+
+.move{
+  top:30px;
+  transition:1s ease;
+  opacity: 1;
+}

@@ -37,3 +37,9 @@ function opensb() {
     // Toggle the no-scroll class on the body
     document.body.classList.toggle('no-scroll');
 }
+
+function circle(){
+    document.getElementById('circle').classList.toggle('move')
+}
+setInterval(circle, 900);
+circle()

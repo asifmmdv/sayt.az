@@ -3131,6 +3131,21 @@
       gap: 4px;
     }
   }
+  .s\:gap-\[5px\] {
+    @media (width >= 1024px) {
+      gap: 5px;
+    }
+  }
+  .s\:gap-\[10px\] {
+    @media (width >= 1024px) {
+      gap: 10px;
+    }
+  }
+  .s\:gap-\[px\] {
+    @media (width >= 1024px) {
+      gap: px;
+    }
+  }
   .s\:px-\[4px\] {
     @media (width >= 1024px) {
       padding-inline: 4px;

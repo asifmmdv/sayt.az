@@ -52,3 +52,27 @@ body{
   transition:1s ease;
   opacity: 1;
 }
+.cardstyle{
+  border:2px solid rgb(145,40,228);
+  box-shadow: 0 20px 40px rgb(145,40,228), 
+                0 15px 12px rgb(145,40,228);
+  .btns{
+    background-color: rgb(162,113,242);
+    color:white;
+    &:hover{
+      color: rgb(162,113,242);
+      background-color: white;
+    }
+  }
+  }
+  
+.switch{
+  #ayliqillik1{
+    color:rgb(162, 113, 242);
+    background-color: white;
+  }
+  #ayliqillik2{
+    color: white;
+    background-color: rgb(162, 113, 242);
+  }
+}

@@ -834,277 +834,354 @@
             </div>
         </div>
         <div class="bg-white xs:py-[64px] py-[32px]">
-    <div class="mx-auto max-w-7xl text-center">
-        <div class="flex  flex-col md:flex-row items-center justify-between lsm:px-12 px-4 md:mb-16 lsm:mb-8 mb-4">
-            <div class="lg:w-1/2 flex flex-col xs:px-[40px] max-w-[1296px]  gap-8">
-                <span class="md:text-[42px] sm:text-3xl 2xs:text-[30px] text-xl md:leading-[42px] sm:leading-[30px] leading-5 tracking-[0.1px] text-[rgb(48,11,96)] font-bold text-start">Hostinq Planınızı Seçin</span>
-                <span class="sm:text-xl text-base 2xs:text-[20px] sm:tracking-[0.1px] sm:font-medium text-[rgb(86,48,138)] text-start">Yaxşı Bir Başlanğıc Təhlükəsiz və Güclü Hostinq Tələb Edir</span>
-            </div>
-            <div class="lg:w-1/2 pt-10">
-                <div class="sm:mx-[5px] md:mx-0 text-start ">
-                    <div id="ayil" class="sm:w-fit sm:justify-between md:w-fit mt-4 md:justify-start  inline-flex border border-[rgb(203,213,225)] rounded-3xl"><span onclick="switchstuff(1)" id="ayliqillik1" class="sm:w-50 w-20 py-3 sm:px-8 px-4 sm:max-w-[120px] md:py-[13px] md:w-[124px] xs:text-base text-sm flex items-center ease-out justify-center bg-[rgb(162,113,242)] rounded-3xl cursor-pointer  text-white font-medium transition-colors duration-[200ms]">Aylıq</span>
-                        <span onclick="switchstuff(2)" id="ayliqillik2" class="sm:w-50 w-20 py-3 sm:px-8 px-4 sm:max-w-[120px] md:py-[13px] md:w-[124px] xs:text-base text-sm flex items-center ease-out justify-center  rounded-3xl cursor-pointer text-[#94A3B8] bg-white">İllik</span>
+            <div class="mx-auto max-w-7xl text-center">
+                <div class="flex  flex-col md:flex-row items-center justify-between lsm:px-12 px-4 md:mb-16 lsm:mb-8 mb-4">
+                    <div class="lg:w-1/2 flex flex-col xs:px-[40px] max-w-[1296px]  gap-8">
+                        <span class="md:text-[42px] sm:text-3xl 2xs:text-[30px] text-xl md:leading-[42px] sm:leading-[30px] leading-5 tracking-[0.1px] text-[rgb(48,11,96)] font-bold text-start">Hostinq Planınızı Seçin</span>
+                        <span class="sm:text-xl text-base 2xs:text-[20px] sm:tracking-[0.1px] sm:font-medium text-[rgb(86,48,138)] text-start">Yaxşı Bir Başlanğıc Təhlükəsiz və Güclü Hostinq Tələb Edir</span>
+                    </div>
+                    <div class="lg:w-1/2 pt-10">
+                        <div class="sm:mx-[5px] md:mx-0 text-start ">
+                            <div id="ayil" class="sm:w-fit sm:justify-between md:w-fit mt-4 md:justify-start  inline-flex border border-[rgb(203,213,225)] rounded-3xl"><span onclick="switchstuff(1)" id="ayliqillik1" class="sm:w-50 w-20 py-3 sm:px-8 px-4 sm:max-w-[120px] md:py-[13px] md:w-[124px] xs:text-base text-sm flex items-center ease-out justify-center bg-[rgb(162,113,242)] rounded-3xl cursor-pointer  text-white font-medium transition-colors duration-[200ms]">Aylıq</span>
+                                <span onclick="switchstuff(2)" id="ayliqillik2" class="sm:w-50 w-20 py-3 sm:px-8 px-4 sm:max-w-[120px] md:py-[13px] md:w-[124px] xs:text-base text-sm flex items-center ease-out justify-center  rounded-3xl cursor-pointer text-[#94A3B8] bg-white">İllik</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative mx-auto grid p-4 grid-cols-1 s:gap-[12px] gap-4 xs:grid-cols-2 s:grid-cols-3 lg:mx-0 lg:max-w-none ">
+                    <div class="relative">
+                        <div id="card1" onclick="choose(1)" class="shadow-m rounded-lg sm:p-6 md:p-4 p-2 cursor-pointer hover:border-[rgb(145,40,228)] border-[transparent] border-[2px] bg-[#FAFBFF] shadow-xl ">
+                            <div class="sm:mt-6 mt-2 flex flex-col gap-x-1 px-1">
+                                <div class="flex px-1 sm:py-0 py-2">
+                                    <div id="card1money" class="2xs:text-4xl text-2xl font-bold tracking-tight text-[rgb(48,11,96)]">₼5</div>
+                                    <div class="illikpul text-sm font-semibold leading-[3rem] text-[rgb(48,11,96)] ml-2 sm:mt-1">/ay</div>
+                                </div>
+                            </div>
+                            <div class="bg-white px-2 py-3 rounded-xl">
+                                <div class="flex items-center px-1 gap-x-4 relative">
+                                    <div class="text-[rgb(48,11,96)] 2xs:text-2xl text-lg font-bold leading-8 text-left">Ekonomik</div>
+                                </div>
+                                <ul class="mt-8 xl:mt-8 space-y-3 text-sm leading-6 text-[rgb(48,11,96)]">
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans">1 </span>Domen</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans">3 GB </span>Disk Həcmi</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans">3 </span>E-mail Hesabı</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>Premium müştəri dəstəyi</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>SSL Təhlükəsizliyi</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>Yedəkləmə və bərpa</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans">Limitsiz </span>Trafik</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>Təhlükəsizlik Xüsusiyyətləri</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>cPanel</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>FTP Girişi</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>Fayl İdarəedici</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-[rgb(162,113,242)] bg-white  hover:bg-[rgb(162,113,242)] hover:text-[white]  mt-6 block rounded-3xl py-2 px-3 text-center text-sm font-semibold leading-6 border border-[rgb(162,113,242)] transition-all duration-200 btns">Sifariş et</div>
+                        </div>
+                    </div>
+                    <div class="s:top-2 top-0  s:scale-105 scale-100 z-20 relative">
+                        <div class="absolute right-4 top-4 text-xs px-3 py-2 bg-white rounded-2xl font-bold text-[rgb(162,113,242)]"><span> ƏN POPULYAR </span></div>
+                        <div id="card2" onclick="choose(2)" class="rounded-lg sm:p-6 md:p-4 p-2 cursor-pointer  transition bg-[#FAFBFF] shadow-xl border-[2px] hover:border-[rgb(145,40,228)] border-[transparent]">
+                            <div class="sm:mt-6 mt-2 flex flex-col gap-x-1 px-1">
+                                <div class="flex px-1 sm:py-0 py-2">
+                                    <div id="card2money" class="2xs:text-4xl text-2xl font-bold tracking-tight text-[rgb(48,11,96)]">₼10</div>
+                                    <div class="illikpul text-sm font-semibold leading-[3rem] text-[rgb(48,11,96)] ml-2 sm:mt-1">/ay</div>
+                                </div>
+                            </div>
+                            <div class="bg-white px-2 py-3 rounded-xl">
+                                <div class="flex items-center px-1 gap-x-4 relative">
+                                    <div id="14" class="text-[rgb(48,11,96)] 2xs:text-2xl text-lg font-bold leading-8 text-left">Standart</div>
+                                </div>
+                                <ul class="mt-8 xl:mt-8 space-y-3 text-sm leading-6 text-[rgb(48,11,96)]">
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans">2 </span>Domen</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans">8 GB </span>Disk Həcmi</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans">5 </span>E-mail Hesabı</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>Premium müştəri dəstəyi</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>SSL Təhlükəsizliyi</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>Yedəkləmə və bərpa</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans">Limitsiz </span>Trafik</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>Təhlükəsizlik Xüsusiyyətləri</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>cPanel</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>FTP Girişi</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>Fayl İdarəedici</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-[rgb(162,113,242)] bg-white  hover:bg-[rgb(162,113,242)] hover:text-[white] shadow-sm  mt-6 block rounded-3xl py-2 px-3 text-center text-sm font-semibold leading-6 border border-mainLightPurple transition-all duration-200 btns">Sifariş et</div>
+                        </div>
+                    </div>
+                    <div class=" relative">
+                        <div id="card3" onclick="choose(3)" class=" shadow-m rounded-lg sm:p-6 md:p-4 p-2 cursor-pointer hover:border-[rgb(145,40,228)] border-[2px] border-[transparent] transition bg-[#FAFBFF] shadow-xl ">
+                            <div class="sm:mt-6 mt-2 flex flex-col gap-x-1 px-1">
+                                <div class="flex px-1 sm:py-0 py-2">
+                                    <div id=card3money class="2xs:text-4xl text-2xl font-bold tracking-tight text-[rgb(48,11,96)]">₼20</div>
+                                    <div class="illikpul text-sm font-semibold leading-[3rem] text-[rgb(48,11,96)] ml-2 sm:mt-1">/ay</div>
+                                </div>
+                            </div>
+                            <div class="bg-white px-2 py-3 rounded-xl">
+                                <div class="flex items-center px-1 gap-x-4 relative">
+                                    <div id="15" class="text-[rgb(48,11,96)] 2xs:text-2xl text-lg font-bold leading-8 text-left">Professional</div>
+                                </div>
+                                <ul role="list" class="mt-8 xl:mt-8 space-y-3 text-sm leading-6 text-[rgb(48,11,96)]">
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans">5 </span>Domen</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans">14 GB </span>Disk Həcmi</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans">Limitsiz </span>E-mail Hesabı</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>Premium müştəri dəstəyi</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>SSL Təhlükəsizliyi</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>Yedəkləmə və bərpa</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans">Limitsiz </span>Trafik</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>Təhlükəsizlik Xüsusiyyətləri</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>cPanel</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>FTP Girişi</div>
+                                    </li>
+                                    <li class="flex gap-x-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
+                                            <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div class="text-left"><span class="font-bold font-sans"> </span>Fayl İdarəedici</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-[rgb(162,113,242)] bg-white  hover:text-[white] hover:bg-[rgb(162,113,242)] hover:text-[white]e mt-6 block rounded-3xl py-2 px-3 text-center text-sm font-semibold leading-6 border border-mainLightPurple transition-all duration-200 btns">Sifariş et</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="relative mx-auto grid p-4 grid-cols-1 s:gap-[8px] gap-4 xs:grid-cols-2 m:grid-cols-3 lg:mx-0 lg:max-w-none ">
-            <div class="relative">
-                <div id="card1" onclick="choose(1)" class="shadow-m rounded-lg sm:p-6 md:p-4 p-2 cursor-pointer hover:border-[rgb(145,40,228)] border-[transparent] border-[2px] bg-[#FAFBFF] shadow-xl ">
-                    <div class="sm:mt-6 mt-2 flex flex-col gap-x-1 px-1">
-                        <div class="flex px-1 sm:py-0 py-2">
-                            <div id="card1money" class="2xs:text-4xl text-2xl font-bold tracking-tight text-[rgb(48,11,96)]">₼5</div>
-                            <div class="illikpul text-sm font-semibold leading-[3rem] text-[rgb(48,11,96)] ml-2 sm:mt-1">/ay</div>
-                        </div>
+        <div class="bg-white s:mt-[80px] xs:mt-[48px] mt-[24px] s:mb-[80px] mb-[48px]">
+            <div class="mx-auto max-w-[1280px] px-[24px] s:px-[32px]">
+                <div class="flex flex-col s:flex-row gap-[32px] s:gap-0 justify-between">
+                    <div class="text-start">
+                        <h2 class="2xs:text-[22px] sm:leading-[44px] tracking-[0.1px] text-[rgb(47,28,106)] xs:text-[42px] mb-2 font-bold ">Startuplar</h2>
+                        <p class="md:text-xl 2xs:text-base text-sm sm:tracking-[0.1px] sm:font-normal text-[rgb(74,33,130)]  ">Mütəxəssis məsləhətlərimizlə biznesinizi necə inkişaf etdirəcəyinizi öyrənin.</p>
                     </div>
-                    <div class="bg-white px-2 py-3 rounded-xl">
-                        <div class="flex items-center px-1 gap-x-4 relative">
-                            <div class="text-[rgb(48,11,96)] 2xs:text-2xl text-lg font-bold leading-8 text-left">Ekonomik</div>
-                        </div>
-                        <ul class="mt-8 xl:mt-8 space-y-3 text-sm leading-6 text-[rgb(48,11,96)]">
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans">1 </span>Domen</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans">3 GB </span>Disk Həcmi</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans">3 </span>E-mail Hesabı</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>Premium müştəri dəstəyi</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>SSL Təhlükəsizliyi</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>Yedəkləmə və bərpa</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans">Limitsiz </span>Trafik</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>Təhlükəsizlik Xüsusiyyətləri</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>cPanel</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>FTP Girişi</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>Fayl İdarəedici</div>
-                            </li>
-                        </ul>
+                    <div>
+                        <a>
+                            <button type="button" class="2xs:px-6 px-2 py-[10px] text-white bg-[rgb(162,113,242)] hover:bg-[rgb(125,59,226)] text-center rounded-[8px]  font-semibold text-base ">
+                                <span class=" flex flex-row flex-nowrap items-center gap-2">Bütün StartUplar <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-4 h-4 mt-[4px]">
+                                        <path fill-rule="evenodd" d="M10.21 14.77a.75.75 0 01.02-1.06L14.168 10 10.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
+                                        <path fill-rule="evenodd" d="M4.21 14.77a.75.75 0 01.02-1.06L8.168 10 4.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </a>
                     </div>
-                    <div class="text-[rgb(162,113,242)] bg-white  hover:bg-[rgb(162,113,242)] hover:text-[white]  mt-6 block rounded-3xl py-2 px-3 text-center text-sm font-semibold leading-6 border border-[rgb(162,113,242)] transition-all duration-200 btns">Sifariş et</div>
                 </div>
-            </div>
-            <div class="s:top-2 top-0  s:scale-105 scale-100 z-20 relative">
-                <div class="absolute right-4 top-4 text-xs px-3 py-2 bg-white rounded-2xl font-bold text-[rgb(162,113,242)]"><span> ƏN POPULYAR </span></div>
-                <div id="card2" onclick="choose(2)" class="rounded-lg sm:p-6 md:p-4 p-2 cursor-pointer  transition bg-[#FAFBFF] shadow-xl border-[2px] hover:border-[rgb(145,40,228)] border-[transparent]">
-                    <div class="sm:mt-6 mt-2 flex flex-col gap-x-1 px-1">
-                        <div class="flex px-1 sm:py-0 py-2">
-                            <div id="card2money" class="2xs:text-4xl text-2xl font-bold tracking-tight text-[rgb(48,11,96)]">₼10</div>
-                            <div class="illikpul text-sm font-semibold leading-[3rem] text-[rgb(48,11,96)] ml-2 sm:mt-1">/ay</div>
+                <div class="mx-auto mt-[64px] grid max-w-[672px] auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                    <article class="overflow-hidden rounded-2xl transition-all duration-300 border-[1px] border-[rgb(229,231,235)] lg:py-6 py-4 lg:px-6 px-4 bg-[rgb(250,244,255)]">
+                        <div class="aspect-[3/2] w-full rounded-2xl overflow-hidden relative">
+                            <a href="/startups/wisheraz">
+                                <img alt="" loading="lazy" decoding="async" data-nimg="fill" class="h-full hover:scale-110 transition-all duration-300 rounded-lg" src="https://api.websiteca.com/storage/GrTVyjXWXE5FzL2aFK72E4iL6izCF5qP2xENi1i1.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: cover; color: transparent;">
+                            </a>
                         </div>
-                    </div>
-                    <div class="bg-white px-2 py-3 rounded-xl">
-                        <div class="flex items-center px-1 gap-x-4 relative">
-                            <div id="14" class="text-[rgb(48,11,96)] 2xs:text-2xl text-lg font-bold leading-8 text-left">Standart</div>
+                        <div class="px-2 flex flex-col justify-between sm:min-h-[172px] min-h-[130px]">
+                            <div>
+                                <h3 class="sm:mt-6 mt-3 text-lg font-semibold leading-8 truncate tracking-tight text-[rgb(48,11,96)]">
+                                    <a class="mt-6 sm:text-2xl text-lg ont-semibold leading-8 tracking-tight text-[rgb(48,11,96)]">Wisher.az</a>
+                                </h3>
+                                <p class="2xs:text-base text-xs leading-7 mt-2 line-clamp-2  text-[rgb(90,39,162)]">Wisher.az xüsusi günləri xatırlamaq və qeyd etmək üçün şəxsi köməkçinizdir.</p>
+                            </div>
+                            <a >
+                                <button type="button" class="py-2 px-4 mt-4 text-white bg-[rgb(162,113,242)] hover:bg-[rgb(125,59,226)]  text-center rounded-[60px] font-semibold opacity-100 text-sm md:text-base"> Ətraflı oxu...</button>
+                            </a>
                         </div>
-                        <ul class="mt-8 xl:mt-8 space-y-3 text-sm leading-6 text-[rgb(48,11,96)]">
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans">2 </span>Domen</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans">8 GB </span>Disk Həcmi</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans">5 </span>E-mail Hesabı</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>Premium müştəri dəstəyi</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>SSL Təhlükəsizliyi</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>Yedəkləmə və bərpa</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans">Limitsiz </span>Trafik</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>Təhlükəsizlik Xüsusiyyətləri</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>cPanel</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>FTP Girişi</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>Fayl İdarəedici</div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="text-[rgb(162,113,242)] bg-white  hover:bg-[rgb(162,113,242)] hover:text-[white] shadow-sm  mt-6 block rounded-3xl py-2 px-3 text-center text-sm font-semibold leading-6 border border-mainLightPurple transition-all duration-200 btns">Sifariş et</div>
-                </div>
-            </div>
-            <div class=" relative">
-                <div id="card3" onclick="choose(3)" class=" shadow-m rounded-lg sm:p-6 md:p-4 p-2 cursor-pointer hover:border-[rgb(145,40,228)] border-[2px] border-[transparent] transition bg-[#FAFBFF] shadow-xl ">
-                    <div class="sm:mt-6 mt-2 flex flex-col gap-x-1 px-1">
-                        <div class="flex px-1 sm:py-0 py-2">
-                            <div id=card3money class="2xs:text-4xl text-2xl font-bold tracking-tight text-[rgb(48,11,96)]">₼20</div>
-                            <div class="illikpul text-sm font-semibold leading-[3rem] text-[rgb(48,11,96)] ml-2 sm:mt-1">/ay</div>
+                    </article>
+                    <article class="overflow-hidden rounded-2xl transition-all duration-300 border-[1px] border-[rgb(229,231,235)] lg:py-6 py-4 lg:px-6 px-4 bg-[rgb(250,244,255)]">
+                        <div class="aspect-[3/2] w-full rounded-2xl overflow-hidden relative">
+                            <a href="/startups/telefonaz">
+                                <img alt="" loading="lazy" decoding="async" data-nimg="fill" class="h-full hover:scale-110 transition-all duration-300 rounded-lg" src="https://api.websiteca.com/storage/FEJiun5EcIZrI9J7vYCrPZLqO0mjMU0YkDI7dfKO.png" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: cover; color: transparent;">
+                            </a>
                         </div>
-                    </div>
-                    <div class="bg-white px-2 py-3 rounded-xl">
-                        <div class="flex items-center px-1 gap-x-4 relative">
-                            <div id="15" class="text-[rgb(48,11,96)] 2xs:text-2xl text-lg font-bold leading-8 text-left">Professional</div>
+                        <div class="px-2 flex flex-col justify-between sm:min-h-[172px] min-h-[130px]">
+                            <div>
+                                <h3 class="sm:mt-6 mt-3 text-lg font-semibold leading-8 truncate tracking-tight text-[rgb(48,11,96)]">
+                                    <a class="mt-6 sm:text-2xl text-lg ont-semibold leading-8 tracking-tight text-[rgb(48,11,96)]">telefon.az</a>
+                                </h3>
+                                <p class="2xs:text-base text-xs leading-7 mt-2 line-clamp-2  text-[rgb(90,39,162)]">Telefonların online alışı və satışı</p>
+                            </div>
+                            <a >
+                                <button type="button" class="py-2 px-4 mt-4 text-white bg-[rgb(162,113,242)] hover:bg-[rgb(125,59,226)]  text-center rounded-[60px] font-semibold opacity-100 text-sm md:text-base"> Ətraflı oxu...</button>
+                            </a>
                         </div>
-                        <ul role="list" class="mt-8 xl:mt-8 space-y-3 text-sm leading-6 text-[rgb(48,11,96)]">
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans">5 </span>Domen</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans">14 GB </span>Disk Həcmi</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans">Limitsiz </span>E-mail Hesabı</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>Premium müştəri dəstəyi</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>SSL Təhlükəsizliyi</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>Yedəkləmə və bərpa</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans">Limitsiz </span>Trafik</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>Təhlükəsizlik Xüsusiyyətləri</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>cPanel</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>FTP Girişi</div>
-                            </li>
-                            <li class="flex gap-x-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgb(0, 176, 144)" aria-hidden="true" class="h-6 w-5 flex-none text-mainGreen">
-                                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                </svg>
-                                <div class="text-left"><span class="font-bold font-sans"> </span>Fayl İdarəedici</div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="text-[rgb(162,113,242)] bg-white  hover:text-[white] hover:bg-[rgb(162,113,242)] hover:text-[white]e mt-6 block rounded-3xl py-2 px-3 text-center text-sm font-semibold leading-6 border border-mainLightPurple transition-all duration-200 btns">Sifariş et</div>
+                    </article>
+                    <article class="overflow-hidden rounded-2xl transition-all duration-300 border-[1px] border-[rgb(229,231,235)] lg:py-6 py-4 lg:px-6 px-4 bg-[rgb(250,244,255)]">
+                        <div class="aspect-[3/2] w-full rounded-2xl overflow-hidden relative">
+                            <a>
+                                <img alt="" loading="lazy" decoding="async" data-nimg="fill" class="h-full hover:scale-110 transition-all duration-300 rounded-lg" src="https://api.websiteca.com/storage/n6JovzwQ5e7Bhz632qaCKE38FOqbGwBKet2dB2lc.jpg" style="position: absolute; height: 100%; width: 100%; inset: 0px; object-fit: cover; color: transparent;">
+                            </a>
+                        </div>
+                        <div class="px-2 flex flex-col justify-between sm:min-h-[172px] min-h-[130px]">
+                            <div>
+                                <h3 class="sm:mt-6 mt-3 text-lg font-semibold leading-8 truncate tracking-tight text-[rgb(48,11,96)]">
+                                    <a class="mt-6 sm:text-2xl text-lg ont-semibold leading-8 tracking-tight text-[rgb(48,11,96)]" >football.biz</a>
+                                </h3>
+                                <p class="2xs:text-base text-xs leading-7 mt-2 line-clamp-2  text-[rgb(90,39,162)]">Futbol nəticələrinin canlı təqdim edilməsi</p>
+                            </div>
+                            <a>
+                                <button type="button" class="py-2 px-4 mt-4 text-white bg-[rgb(162,113,242)] hover:bg-[rgb(125,59,226)]  text-center rounded-[60px] font-semibold opacity-100 text-sm md:text-base"> Ətraflı oxu...</button>
+                            </a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
-    </div>
-</div>
     </main>
     <script src="./js/header.js"></script>
     <script src="./js/index.js"></script>

@@ -76,3 +76,7 @@ body{
     background-color: rgb(162, 113, 242);
   }
 }
+
+#personal{
+  grid-template-columns: repeat(auto-fit, minmax(240px, 260px));
+}

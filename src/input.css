@@ -80,3 +80,24 @@ body{
 #personal{
   grid-template-columns: repeat(auto-fit, minmax(240px, 260px));
 }
+
+#monroe:hover{
+  #mon1{
+    display: none;
+  }
+  #mon2{
+    display: block;
+    transition: 2s;
+  }
+    
+}
+#hasbik:hover{
+  #has1{
+    display: none;
+  }
+  #has2{
+    display: block;
+    transition: 1s;
+  }
+    
+}

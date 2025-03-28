@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sayt</title>
+    <link rel="stylesheet" href="/src/input.css" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="flex py-[24px] bg-white px-[28px] items-center justify-between sticky top-0 z-[5000]">
+        <a href="/index.html" class="h-[34.8px] w-[114px]"><img class="h-[100%] w-[100%] cursor-pointer" src="./icon/saytaz.svg" alt="logo" /></a>
+        <div class="flex items-center gap-[30px]  max-s:hidden">
+            <div class="flex flex-col relative">
+                <div onclick="opendd(1)" class="flex items-center font-bold text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
+                    <div>Veb sayt</div>
+                    <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
+                </div>
+                <div id="dropdown1" class="flex-col py-[16px] min-w-[414px] bg-white rounded-lg border-slate-200 hidden overflow-y-scroll border-[1px] absolute top-[38px] left-[-158px] z-[1000] dropdowns">
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/website-program.svg" alt="wbp1"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Saytların hazırlanması</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Veb saytların hazırlanması</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/lJ9i3mHSrGbIyOFk6VnqpcyzeZgiKmjyiUfdEhAc.svg" alt="wbp2"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Hökumət və qeyri-kommersiya saytları</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Hökumət və qeyri-kommersiya saytları</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/3.svg" alt="wbp3"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Kiçik biznes saytları</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Kiçik bizneslər üçün saytlar</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/4.svg" alt="wbp4"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">E-ticarət saytları</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">E-ticarət saytları</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/5.svg" alt="wbp5"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Hüquq firma saytı</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Hüquq firma saytı</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/6.svg" alt="wbp6"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Bloqlar və Şəxsi Vebsayt</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Bloqlar və Şəxsi Vebsayt</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/7.svg" alt="wbp7"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Daşınmaz əmlak veb saytı</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Daşınmaz əmlak veb saytı</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/8.svg" alt="wbp8"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Tibb - Doktor Saytlar</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Tibb Doktor Saytlar</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/9.svg" alt="wbp9"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">WordPress Saytları</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">WordPress Saytları</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col relative">
+                <div onclick="opendd(2)" class="flex items-center font-bold text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
+                    <div>Domen</div>
+                    <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
+                </div>
+                <div id="dropdown2" class="flex-col  bg-white py-[16px] min-w-[341px] rounded-lg border-slate-200 overflow-y-scroll border-[1px] hidden absolute top-[38px] left-[-135px] z-1000 dropdowns">
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/10.svg" alt="wbp10"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Domen</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Etibarlı xidmət</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/11.svg" alt="wbp11"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Pulsuz Domen Qeydiyyatı</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Sürətli qeydiyyat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col relative">
+                <div onclick="opendd(3)" class="flex items-center font-bold text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
+                    <div>Hosting</div>
+                    <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
+                </div>
+                <div id="dropdown3" class="flex-col min-w-[341px] bg-white py-[16px] rounded-lg border-slate-200 overflow-y-scroll border-[1px] hidden absolute top-[38px] left-[-130px] z-1000 dropdowns">
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/12.svg" alt="wbp12"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Veb Hosting</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">₼10.00/ay-dan başlayaraq</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/13.svg" alt="wbp13"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">VPS</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">₼15.00/ay-dan başlayaraq</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/14.svg" alt="wbp14"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Server</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">₼99.00/ay-dan başlayaraq</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col relative">
+                <div onclick="opendd(4)" class="flex items-center font-bold text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
+                    <div>Xidmətlər</div>
+                    <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
+                </div>
+                <div id="dropdown4" class="flex-col min-w-[351px] py-[16px] rounded-lg  bg-white border-slate-200 overflow-y-scroll border-[1px] hidden absolute top-[38px] left-[-120px] z-1000 dropdowns">
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/15.svg" alt="wbp15"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Vebsayt sifarişinizi izləyin</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Sifarişinizi asanlıqla izləyin</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/16.svg" alt="wbp16"/>
+                        </div>
+                        <a class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Sayt Kalkulyatoru</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Saytın Qiymətini Öyrən</p>
+                        </a>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/17.svg" alt="wbp17"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">SEO Xidməti</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Axtarış Sistemi Optimizasiyası</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/18.svg" alt="wbp18"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Mobil Tətbiqlərin Hazırlanması</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Mobil tətbiq xidməti</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/20.svg" alt="wbp20"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Sosial Media Marketinq</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Sosial Media Marketinq</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col relative">
+                <div onclick="opendd(5)" class="flex items-center font-bold text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
+                    <div>Şirkət</div>
+                    <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
+                </div>
+                <div id="dropdown5" class="flex-col min-w-[490px] py-[16px]  bg-white rounded-lg border-slate-200 overflow-y-scroll border-[1px] hidden absolute top-[38px] left-[-200px] z-1000 dropdowns">
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/21.svg" alt="wbp21"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Haqqımızda</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Bizim komanda üzvlərimiz</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/22.svg" alt="wbp22"/>
+                        </div>
+                        <a class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Bloq</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Ən son xəbərlər və faydalı məlumatlar</p>
+                        </a>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/23.svg" alt="wbp23"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Bütün StartUplar</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Startupları idarə edən komandamıza qoşulun</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/24.svg" alt="wbp24"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Portfolio</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Hazırladığımız hər bir iş bizim üçün dəyərlidir</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/25.svg" alt="wbp25"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Karyera</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Hazırkı vakansiyalarımız</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/26.svg" alt="wbp26"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Freelance</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Sizdə qeydiyyatdan keçməklə freelance işləyə bilərsiz</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/27.svg" alt="wbp27"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Əlaqə Forması</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Əlaqə Saxlayın</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-row gap-[28px]">
+            <div class="flex flexr-row gap-[18px] items-center">
+                <div class="flex flex-col text-[#300B66] relative"> 
+                    <div onclick="opendd(6)" class="flex flex-row items-center gap-[10px] cursor-pointer">
+                        <span class="text-[22px] font-bold">₼</span>
+                        <div class="h-[20px] w-[20px]">
+                            <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-8mmkcg"><path fill="rgb(204, 204, 204)" class="hover:fill-[rgb(153,153,153)]" d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
+                        </div>
+                    </div>
+                    <div id="dropdown6" class="hidden flex-col position absolute h-[72px] text-[18px] bg-white py-[4px] border-[1px] min-w-[60px] border-[rgb(225,225,225)] rounded-[4px] font-bold top-[44px] left-[-3px] ">
+                        <div class="pl-[18px] h-[32px] w-full cursor-pointer"><span>$</span></div>
+                        <div class="bg-[rgb(241,232,255)] h-[32px] pl-[18px] cursor-pointer w-full"><span>₼</span></div>
+                    </div>
+                </div>
+                <div class="flex flex-col text-[#300B66] relative"> 
+                    <div onclick="opendd(7)" class="flex flex-row items-center gap-[10px] cursor-pointer">
+                        <div class="h-[33px] w-[24px] flex items-center"><img class="h-[16px] w-[20px] object-cover" src="/icon/az.png" alt="flg"/></div>
+                        <div class="h-[20px] w-[20px]">
+                            <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-8mmkcg"><path fill="rgb(204, 204, 204)" class="hover:fill-[rgb(153,153,153)]" d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
+                        </div>
+                    </div>
+                    <div id="dropdown7" class="hidden flex-col position absolute h-[72px] pt-[3px] bg-white pb-[4px] border-[1px] min-w-[60px] border-[rgb(225,225,225)] rounded-[4px] font-bold top-[44px] left-[-3px] ">
+                        <div class="pl-[18px] w-full h-[32px] cursor-pointer"><div class="h-[33px] w-[24px] flex items-center"><img class="h-[16px] w-full object-cover" src="/icon/usa3.png" alt="flg2"/></div></div>
+                        <div class="bg-[rgb(241,232,255)] h-[32px] overflow-hidden pl-[18px] w-full cursor-pointer">  <div class="h-[33px] w-[24px] flex items-center"><img class="h-[16px] w-full object-cover" src="/icon/az.png" alt="flg3"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row gap-[16px] max-m:hidden">
+                <button class="bg-[linear-gradient(90deg,#7028e4,#e5b2ca)] h-[41.91px] w-[175.39px] cursor-pointer text-white text-[16px] font-bold rounded-[8px]">Qiymət Təklifi Al</button>
+                <button class="h-[43.91px] w-[120px] rounded-[8px] font-bold border-[1px] border-[rgb(162,113,242)] text-[rgb(162,113,242)] cursor-pointer">Daxil olun</button>
+            </div>
+            <div onclick="opensb()" class="hidden items-center cursor-pointer max-m:flex p-[10px]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg>
+            </div>
+        </div>
+    </header>
+    <div id="sidebar" class="hidden flex-col w-[383px] max-xxs:w-[339px] min-h-[100vh] overflow-auto p-[32px] bg-white m:opacity-0 border-l-[rgb(227,221,233)]  border-[1px] border-r-0 border-b-0 border-t-0 gap-[10px]  fixed top-0 right-0 z-9999">
+        <div onclick="opensb()" class="ml-auto cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </div>
+        <div class="flex flex-col gap-[30px] s:hidden py-[12px]">
+            <div class="flex flex-col relative">
+                <div onclick="opendd(11)" class="flex items-center font-[800] text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
+                    <div >Veb sayt</div>
+                    <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
+                </div>
+                <div id="dropdown11" class="flex-col py-[16px] w-[334px] rounded-lg border-slate-200 hidden overflow-y-scroll border-[1px] absolute top-[38px] z-[4000] bg-white dropdowns">
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] hidden xs:flex bg-[rgb(219,234,254)]  items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/website-program.svg" alt="wbp1"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Saytların hazırlanması</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Veb saytların hazırlanması</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/lJ9i3mHSrGbIyOFk6VnqpcyzeZgiKmjyiUfdEhAc.svg" alt="wbp2"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Hökumət və qeyri-kommersiya saytları</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Hökumət və qeyri-kommersiya saytları</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/3.svg" alt="wbp3"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Kiçik biznes saytları</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Kiçik bizneslər üçün saytlar</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/4.svg" alt="wbp4"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">E-ticarət saytları</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">E-ticarət saytları</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/5.svg" alt="wbp5"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Hüquq firma saytı</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Hüquq firma saytı</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/6.svg" alt="wbp6"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Bloqlar və Şəxsi Vebsayt</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Bloqlar və Şəxsi Vebsayt</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/7.svg" alt="wbp7"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Daşınmaz əmlak veb saytı</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Daşınmaz əmlak veb saytı</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/8.svg" alt="wbp8"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Tibb - Doktor Saytlar</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Tibb Doktor Saytlar</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/9.svg" alt="wbp9"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">WordPress Saytları</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">WordPress Saytları</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col relative">
+                <div onclick="opendd(12)" class="flex items-center font-[800] text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
+                    <div>Domen</div>
+                    <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
+                </div>
+                <div id="dropdown12" class="flex-col py-[16px] rounded-lg border-slate-200 overflow-y-scroll border-[1px] hidden absolute top-[38px] bg-white  z-[4000] dropdowns">
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/10.svg" alt="wbp10"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Domen</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Etibarlı xidmət</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/11.svg" alt="wbp11"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Pulsuz Domen Qeydiyyatı</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Sürətli qeydiyyat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col relative">
+                <div onclick="opendd(13)" class="flex items-center font-[800] text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
+                    <div>Hosting</div>
+                    <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
+                </div>
+                <div id="dropdown13" class="flex-col py-[16px] rounded-lg border-slate-200 overflow-y-scroll border-[1px] hidden absolute top-[38px] z-[4000] bg-white dropdowns">
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/12.svg" alt="wbp12"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Veb Hosting</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">₼10.00/ay-dan başlayaraq</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/13.svg" alt="wbp13"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">VPS</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">₼15.00/ay-dan başlayaraq</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/14.svg" alt="wbp14"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Server</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">₼99.00/ay-dan başlayaraq</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col relative">
+                <div onclick="opendd(14)" class="flex items-center font-[800] text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
+                    <div>Xidmətlər</div>
+                    <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
+                </div>
+                <div id="dropdown14" class="flex-col py-[16px] rounded-lg border-slate-200 overflow-y-scroll border-[1px] hidden absolute bg-white top-[38px]  z-[4000] dropdowns">
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/15.svg" alt="wbp15"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Vebsayt sifarişinizi izləyin</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Sifarişinizi asanlıqla izləyin</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/16.svg" alt="wbp16"/>
+                        </div>
+                        <a class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Sayt Kalkulyatoru</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Saytın Qiymətini Öyrən</p>
+                        </a>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/17.svg" alt="wbp17"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">SEO Xidməti</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Axtarış Sistemi Optimizasiyası</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/18.svg" alt="wbp18"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Mobil Tətbiqlərin Hazırlanması</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Mobil tətbiq xidməti</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/20.svg" alt="wbp20"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Sosial Media Marketinq</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Sosial Media Marketinq</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col relative">
+                <div onclick="opendd(15)" class="flex items-center font-[800] text-[16px] gap-[3px] cursor-pointer text-[#300B66] hover:text-[rgb(125,59,226)]">
+                    <div>Şirkət</div>
+                    <div class="h-[20px] w-[20px]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="w-5 h-5 group-hover:text-mainLightPurpleHover"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></div>
+                </div>
+                <div id="dropdown15" class="flex-col py-[16px] rounded-lg border-slate-200 overflow-y-scroll border-[1px] hidden absolute top-[38px] bg-white z-[4000] dropdowns">
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/21.svg" alt="wbp21"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Haqqımızda</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Bizim komanda üzvlərimiz</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/22.svg" alt="wbp22"/>
+                        </div>
+                        <a class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Bloq</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Ən son xəbərlər və faydalı məlumatlar</p>
+                        </a>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/23.svg" alt="wbp23"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Bütün StartUplar</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Startupları idarə edən komandamıza qoşulun</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/24.svg" alt="wbp24"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Portfolio</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Hazırladığımız hər bir iş bizim üçün dəyərlidir</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/25.svg" alt="wbp25"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Karyera</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Hazırkı vakansiyalarımız</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/26.svg" alt="wbp26"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Freelance</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Sizdə qeydiyyatdan keçməklə freelance işləyə bilərsiz</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-[12px] pr-[16px] pb-[12px] pl-[32px] gap-[16px] hover:bg-[rgb(248,250,252)] cursor-pointer">
+                        <div class="h-[52px] w-[52px] bg-[rgb(219,234,254)] hidden xs:flex items-center justify-center rounded-[8px]">
+                            <img class="h-auto max-w-[28px]" src="./icon/27.svg" alt="wbp27"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="text-[rgb(51,65,85)] font-[500] text-[16px]">Əlaqə Forması</p>
+                            <p class="text-[14px] font-bold text-[rgb(100,116,139)] ">Əlaqə Saxlayın</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flexr-row gap-[18px] items-center">
+            <div class="flex flex-col text-[#300B66] relative"> 
+                <div onclick="opendd(8)" class="flex flex-row items-center gap-[10px] cursor-pointer">
+                    <span class="text-[22px] font-bold">₼</span>
+                    <div class="h-[20px] w-[20px]">
+                        <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-8mmkcg"><path fill="rgb(204, 204, 204)" class="hover:fill-[rgb(153,153,153)]" d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
+                    </div>
+                </div>
+                <div id="dropdown8" class="hidden flex-col position absolute h-[72px] text-[18px] py-[4px] border-[1px] min-w-[60px] bg-white border-[rgb(225,225,225)] rounded-[4px] font-bold top-[44px] left-[-3px] z-3000">
+                    <div class="pl-[18px] h-[32px] w-full cursor-pointer"><span>$</span></div>
+                    <div class="bg-[rgb(241,232,255)] h-[32px] pl-[18px] cursor-pointer w-full"><span>₼</span></div>
+                </div>
+            </div>
+            <div class="flex flex-col text-[#300B66] relative"> 
+                <div onclick="opendd(9)" class="flex flex-row items-center gap-[10px] cursor-pointer">
+                    <div class="h-[33px] w-[24px] flex items-center"><img class="h-[16px] w-[20px] object-cover" src="/icon/az.png" alt="flg"/></div>
+                    <div class="h-[20px] w-[20px]">
+                        <svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-8mmkcg"><path fill="rgb(204, 204, 204)" class="hover:fill-[rgb(153,153,153)]" d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg>
+                    </div>
+                </div>
+                <div id="dropdown9" class="hidden flex-col position absolute h-[72px] pt-[3px] pb-[4px] border-[1px] min-w-[60px] border-[rgb(225,225,225)] rounded-[4px] font-bold top-[44px] left-[-3px] bg-white">
+                    <div class="pl-[18px] w-full h-[32px] cursor-pointer"><div class="h-[33px] w-[24px] flex items-center"><img class="h-[16px] w-full object-cover" src="/icon/usa3.png" alt="flg2"/></div></div>
+                    <div class="bg-[rgb(241,232,255)] h-[32px] overflow-hidden pl-[18px] w-full cursor-pointer">  <div class="h-[33px] w-[24px] flex items-center"><img class="h-[16px] w-full object-cover" src="/icon/az.png" alt="flg3"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-[20px] mt-[8px]">
+            <button class="bg-[linear-gradient(90deg,#7028e4,#e5b2ca)] h-[41.91px] w-full cursor-pointer text-white text-[16px] font-bold rounded-[8px]">Qiymət Təklifi Al</button>
+            <button class="h-[43.91px] w-full rounded-[8px] font-bold border-[1px] border-[rgb(162,113,242)] text-[rgb(162,113,242)] cursor-pointer">Daxil olun</button>
+        </div>
+    </div>
+    <main class="costCalculator md:w-4/5 w-full mx-auto mt-4 bg-[#f5f5f5]">
+        <div class="flex s:flex-row flex-col md:gap-6 gap-2 pb-12 mt-2 px-2 py-6 relative">
+            <div class="s:w-2/3 w-full bg-white p-4">
+                <h1 class="!text-5xl text-[rgb(28,36,52)] s:text-4xl font-bold mt-4 mb-12">Qiymət Təklifi Al</h1>
+                <div class="mb-10">
+                    <h3 class="text-[#212529] text-lg font-medium">Statik səhifələr</h3>
+                    <div class="staticPage bg-[#f8f8fa] mt-2 rounded-md  overflow-hidden">
+                        <div class="mt-4 py-2 px-4">
+                            <p class="mb-4 text-[rgb(28,36,52)]">Neçə statik səhifə olacaq?</p>
+                            <div class="flex justify-between items-center"><span class="bg-[rgb(162,113,242)] text-white flex xs:w-8 w-6 xs:h-8 h-6 xs:text-base text-sm items-center justify-center rounded-md">1</span>
+                                <input class="w-10/12 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[rgb(162,113,242)]" min="1" max="20" step="1" type="range" value="4"><span class="bg-[rgb(162,113,242)] text-white flex xs:w-8 w-6 xs:h-8 h-6 xs:text-base text-sm items-center justify-center rounded-md">20</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 py-2 px-4 flex xs:flex-row flex-col xs:justify-between xs:items-center gap-x-2">
+                            <p class="text-[rgb(28,36,52)]">Dizayn <span class="whitespace-nowrap text-[rgb(28,36,52)]">mürəkkəblik :</span></p>
+                            <div class="flex flex-col justify-center gap-4 xs:w-4/6 w-full xs:mt-0 mt-4">
+                                <div class="flex justify-between items-center text-xs xs:text-base xs:gap-x-0 gap-x-4 xs:pr-4 pr-0"><span class="text-[rgb(28,36,52)]">Sadə</span><span class="text-[rgb(28,36,52)]">Orta</span><span class="text-[rgb(28,36,52)]">Xüsusi</span></div>
+                                <div>
+                                    <input class="md:ml-4 ml-0 md:w-11/12 w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[rgb(162,113,242)]" min="1" max="3" step="1" type="range" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mt-4 py-4 px-4 bg-[#4a84bf26]">
+                            <p class="text-[#285a70]">Xərc :</p>
+                            <p class="text-[rgb(162,113,242)] sm:text-[22px] font-[500]">4 səhifə / ₼ 400</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-10">
+                    <h3 class="text-[#212529] text-lg font-medium mt-3">Veb sayt əlavələri</h3>
+                    <div class="addOnsPage bg-[#f8f8fa] mt-2 rounded-md  overflow-hidden">
+                        <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-6 gap-y-4 mt-4  py-2 px-4">
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Bloq</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Bloq">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Üzv girişi /‍‍‍ Profillər</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Üzv girişi /‍‍‍ Profillər">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Responsive</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Responsive">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Forum</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Forum">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Mesajlaşma</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Mesajlaşma">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Canlı Söhbət</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Canlı Söhbət">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Qalereya</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Qalereya">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Əlaqə Forması</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Əlaqə Forması">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Saytda Axtarış</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Saytda Axtarış">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Xəritə Məlumatı / Geolocation</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Xəritə Məlumatı / Geolocation">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Rezervasyon</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Rezervasyon">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Sosial Media inteqrasiyası</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Sosial Media inteqrasiyası">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Analitika / İzləmə</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Analitika / İzləmə">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Admin Panel</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Admin Panel">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="flex justify-between items-center mt-4  py-4 px-4 bg-[#4a84bf26]">
+                            <p class="text-[#285a70]">Xərc :</p>
+                            <p class="text-[rgb(162,113,242)] sm:text-[22px] font-semibold">₼ 0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-10">
+                    <h3 class="text-[#212529] text-lg font-medium mt-3">Axtarış motorunun optimallaşdırılması</h3>
+                    <div class="seoPage bg-[#f8f8fa] mt-2 rounded-md  overflow-hidden">
+                        <div class="grid xs:grid-cols-2 grid-cols-1 gap-x-6 gap-y-4 py-4 px-4">
+                            <div class="inline-flex items-center">
+                                <label class="relative flex items-center mr-2 rounded-full cursor-pointer" for="Başlıqlar &amp;  Meta" data-ripple-dark="true">
+                                    <input id="Başlıqlar &amp;  Meta" class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-gray-400 transition-all duration-500 before:absolute before:top-2/4 before:left-2/4 before:block before:h-8 before:w-8 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[rgb(162,113,242)] checked:bg-[rgb(162,113,242)] checked:before:bg-[rgb(162,113,242)] hover:before:opacity-40"
+                                    type="checkbox" name="Başlıqlar &amp;  Meta">
+                                    <div class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                                        </svg>
+                                    </div>
+                                </label>
+                                <label class="mt-px text-gray-700 cursor-pointer select-none" for="Başlıqlar &amp;  Meta">Başlıqlar &amp; Meta</label>
+                            </div>
+                            <div class="inline-flex items-center">
+                                <label class="relative flex items-center mr-2 rounded-full cursor-pointer" for="Açar söz" data-ripple-dark="true">
+                                    <input id="Açar söz" class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-gray-400 transition-all duration-500 before:absolute before:top-2/4 before:left-2/4 before:block before:h-8 before:w-8 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[rgb(162,113,242)] checked:bg-[rgb(162,113,242)] checked:before:bg-[rgb(162,113,242)] hover:before:opacity-40"
+                                    type="checkbox" name="Açar söz">
+                                    <div class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                                        </svg>
+                                    </div>
+                                </label>
+                                <label class="mt-px text-gray-700 cursor-pointer select-none" for="Açar söz">Açar söz</label>
+                            </div>
+                            <div class="inline-flex items-center">
+                                <label class="relative flex items-center mr-2 rounded-full cursor-pointer" for="+20 Qabaqcıl Texnika" data-ripple-dark="true">
+                                    <input id="+20 Qabaqcıl Texnika" class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-gray-400 transition-all duration-500 before:absolute before:top-2/4 before:left-2/4 before:block before:h-8 before:w-8 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[rgb(162,113,242)] checked:bg-[rgb(162,113,242)] checked:before:bg-[rgb(162,113,242)] hover:before:opacity-40"
+                                    type="checkbox" name="+20 Qabaqcıl Texnika">
+                                    <div class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                                        </svg>
+                                    </div>
+                                </label>
+                                <label class="mt-px text-gray-700 cursor-pointer select-none" for="+20 Qabaqcıl Texnika">+20 Qabaqcıl Texnika</label>
+                            </div>
+                            <div class="inline-flex items-center">
+                                <label class="relative flex items-center mr-2 rounded-full cursor-pointer" for="Başlıq Teqləri" data-ripple-dark="true">
+                                    <input id="Başlıq Teqləri" class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-gray-400 transition-all duration-500 before:absolute before:top-2/4 before:left-2/4 before:block before:h-8 before:w-8 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[rgb(162,113,242)] checked:bg-[rgb(162,113,242)] checked:before:bg-[rgb(162,113,242)] hover:before:opacity-40"
+                                    type="checkbox" name="Başlıq Teqləri">
+                                    <div class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                                        </svg>
+                                    </div>
+                                </label>
+                                <label class="mt-px text-gray-700 cursor-pointer select-none" for="Başlıq Teqləri">Başlıq Teqləri</label>
+                            </div>
+                            <div class="inline-flex items-center">
+                                <label class="relative flex items-center mr-2 rounded-full cursor-pointer" for="Sitemap" data-ripple-dark="true">
+                                    <input id="Sitemap" class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-gray-400 transition-all duration-500 before:absolute before:top-2/4 before:left-2/4 before:block before:h-8 before:w-8 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[rgb(162,113,242)] checked:bg-[rgb(162,113,242)] checked:before:bg-[rgb(162,113,242)] hover:before:opacity-40"
+                                    type="checkbox" name="Sitemap">
+                                    <div class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                                        </svg>
+                                    </div>
+                                </label>
+                                <label class="mt-px text-gray-700 cursor-pointer select-none" for="Sitemap">Sitemap</label>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center mt-4  py-4 px-4 bg-[#4a84bf26]">
+                            <p class="text-[#285a70]">Xərc :</p>
+                            <p class="text-[rgb(162,113,242)] sm:text-[22px] font-[500]">₼ 0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-10">
+                    <h3 class="text-[#212529] text-lg font-medium mt-3">Elektron ticarət əlavələri</h3>
+                    <div class="addOnsPage bg-[#f8f8fa] mt-2 rounded-md  overflow-hidden">
+                        <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-6 gap-y-4 mt-4  py-2 px-4">
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Ödəniş</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Ödəniş">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Səbət</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Səbət">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Məhsullar</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Məhsullar">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Bəyəndiklərim</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Bəyəndiklərim">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Filtr</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Filtr">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                            <label class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between">
+                                <div class="w-3/4"><span class="text-sm font-medium text-gray-900">Məhsul Haqqında</span></div>
+                                <div>
+                                    <input class="sr-only peer" type="checkbox" name="Məhsul Haqqında">
+                                    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white  after:content-['']  after:absolute  after:top-0.5  after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5  after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-[rgb(162,113,242)]"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="flex justify-between items-center mt-4  py-4 px-4 bg-[#4a84bf26]">
+                            <p class="text-[#285a70]">Xərc :</p>
+                            <p class="text-[rgb(162,113,242)] sm:text-[22px] font-[500]">₼ 0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-10">
+                    <h3 class="text-[#212529] text-lg font-medium mt-3">Logo dizaynı</h3>
+                    <div class="logoPage bg-[#f8f8fa] mt-2 rounded-md  overflow-hidden">
+                        <div class="flex flex-col justify-center gap-4 w-full sm:mt-0 mt-4 py-2 px-4">
+                            <div class="flex justify-between items-center text-xs xs:text-base sm:gap-x-0 gap-x-4 px-2"><span>Ehtiyac yoxdur</span><span>Sadə</span><span>Xüsusi</span></div>
+                            <input class="md:ml-4 ml-0 md:w-11/12 w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[rgb(162,113,242)]" min="1" max="3" step="1" type="range" value="1">
+                        </div>
+                        <div class="flex justify-between items-center mt-4  py-4 px-4 bg-[#4a84bf26]">
+                            <p class="text-[#285a70]">Cost :</p>
+                            <p class="text-[rgb(162,113,242)] sm:text-[22px] font-[500]">₼ 0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s:w-1/3 w-full h-fit sticky top-0">
+                <div class="flex flex-col gap-4 p-8 bg-white">
+                    <p> Təklifiniz</p>
+                    <p class="flex flex-row justify-between items-center"><span class="text-[#8b8b9a]"> Statik səhifələr : </span><span class="text-[rgb(162,113,242)] font-bold text-lg">₼ 400</span></p>
+                    <p class="flex flex-row justify-between items-center"><span class="text-[#8b8b9a]"> Əlavələr: </span><span class="text-[rgb(162,113,242)] font-bold text-lg"> ₼ 0</span></p>
+                    <p class="flex flex-row justify-between items-center"><span class="text-[#8b8b9a]"> SEO : </span><span class="text-[rgb(162,113,242)] font-bold text-lg"> ₼ 0</span></p>
+                    <p class="flex flex-row justify-between items-center"><span class="text-[#8b8b9a]"> E-ticarət : </span><span class="text-[rgb(162,113,242)] font-bold text-lg"> ₼ 0</span></p>
+                    <p class="flex flex-row justify-between items-center"><span class="text-[#8b8b9a]"> Logo dizaynı : </span><span class="text-[rgb(162,113,242)] font-bold text-lg"> ₼ 0</span></p>
+                    <hr>
+                    <p class="flex flex-row justify-between items-center gap-4 text-[#8b8b9a] text-base text-right"><span class="font-bold whitespace-nowrap"> Qeyd : </span><span class="text-base "> Minimum sayt qiyməti  <span class="text-[rgb(162,113,242)] whitespace-nowrap">₼ 450</span></span>
+                    </p>
+                </div>
+                <h3 class="bg-[rgb(162,113,242)] text-white text-2xl p-8 flex flex-row justify-between items-center"><span>Ümumi təxmini dəyəri: </span><span class="font-semibold whitespace-nowrap">₼ 450</span></h3>
+                <div class=" mt-6 ">
+                    <button class="bg-[#2bc48a] w-full text-white font-bold p-4 rounded-md" fdprocessedid="r2gom">Saytınızı İndi Sifariş Edin</button>
+                </div>
+            </div>
+        </div>
+    </main>   
+    <script src="./js/header.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

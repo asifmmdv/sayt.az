@@ -91,6 +91,16 @@ body{
   }
     
 }
+#escobar:hover{
+  #esc1{
+    display: none;
+  }
+  #esc2{
+    display: block;
+    transition: 2s;
+  }
+    
+}
 #hasbik:hover{
   #has1{
     display: none;
@@ -98,6 +108,35 @@ body{
   #has2{
     display: block;
     transition: 1s;
+  }
+    
+}
+#winston:hover{
+  #win1{
+    display: none;
+  }
+  #win2{
+    display: block;
+    transition: 1s;
+  }
+    
+}
+#steve:hover{
+  #ste1{
+    display: none;
+  }
+  #ste2{
+    display: block;
+    transition: 1s;
+  }
+    
+}
+#rick:hover{
+  #rick1{
+    display: none;
+  }
+  #rick2{
+    display: block;
   }
     
 }

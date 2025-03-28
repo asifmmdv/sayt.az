@@ -270,9 +270,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-2 {
-    top: calc(var(--spacing) * 2);
-  }
   .top-2\/4 {
     top: calc(2/4 * 100%);
   }
@@ -501,9 +498,6 @@
       max-width: 96rem !important;
     }
   }
-  .-m-1 {
-    margin: calc(var(--spacing) * -1);
-  }
   .-m-1\.5 {
     margin: calc(var(--spacing) * -1.5);
   }
@@ -530,9 +524,6 @@
   }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
-  }
-  .mt-12 {
-    margin-top: calc(var(--spacing) * 12);
   }
   .mt-\[1px\] {
     margin-top: 1px;
@@ -564,14 +555,8 @@
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
-  .mb-0 {
-    margin-bottom: calc(var(--spacing) * 0);
-  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
-  }
-  .mb-3 {
-    margin-bottom: calc(var(--spacing) * 3);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
@@ -698,9 +683,6 @@
   }
   .h-2 {
     height: calc(var(--spacing) * 2);
-  }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
   }
   .h-3\.5 {
     height: calc(var(--spacing) * 3.5);
@@ -831,14 +813,8 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
-  }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
   }
   .w-3\.5 {
     width: calc(var(--spacing) * 3.5);
@@ -1075,16 +1051,8 @@
     --tw-translate-y: 100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .-translate-x-2 {
-    --tw-translate-x: calc(var(--spacing) * -2);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .-translate-x-2\/4 {
     --tw-translate-x: calc(calc(2/4 * 100%) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-2 {
-    --tw-translate-y: calc(var(--spacing) * -2);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-2\/4 {
@@ -2076,9 +2044,6 @@
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
-  .p-1 {
-    padding: calc(var(--spacing) * 1);
-  }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
   }
@@ -2480,20 +2445,8 @@
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
   }
-  .text-\[\#4a81\] {
-    color: #4a81;
-  }
-  .text-\[\#4a81a1\] {
-    color: #4a81a1;
-  }
   .text-\[\#4a2182\] {
     color: #4a2182;
-  }
-  .text-\[\#4a8182\] {
-    color: #4a8182;
-  }
-  .text-\[\#4a\] {
-    color: #4a;
   }
   .text-\[\#8b8b9a\] {
     color: #8b8b9a;
@@ -2515,12 +2468,6 @@
   }
   .text-\[\#676767\] {
     color: #676767;
-  }
-  .text-\[\#\] {
-    color: #;
-  }
-  .text-\[red\] {
-    color: red;
   }
   .text-\[rgb\(28\,36\,52\)\] {
     color: rgb(28,36,52);
@@ -4554,6 +4501,15 @@ body {
     transition: 2s;
   }
 }
+#escobar:hover {
+  #esc1 {
+    display: none;
+  }
+  #esc2 {
+    display: block;
+    transition: 2s;
+  }
+}
 #hasbik:hover {
   #has1 {
     display: none;
@@ -4561,6 +4517,32 @@ body {
   #has2 {
     display: block;
     transition: 1s;
+  }
+}
+#winston:hover {
+  #win1 {
+    display: none;
+  }
+  #win2 {
+    display: block;
+    transition: 1s;
+  }
+}
+#steve:hover {
+  #ste1 {
+    display: none;
+  }
+  #ste2 {
+    display: block;
+    transition: 1s;
+  }
+}
+#rick:hover {
+  #rick1 {
+    display: none;
+  }
+  #rick2 {
+    display: block;
   }
 }
 @property --tw-translate-x {

@@ -140,3 +140,21 @@ body{
   }
     
 }
+#jordan:hover{
+  #jordan1{
+    display: none;
+  }
+  #jordan2{
+    display: block;
+  }
+    
+}
+
+#miri:hover{
+  #miri1{
+    display: none;
+  }
+  #miri2{
+    display: block;
+  }
+}
